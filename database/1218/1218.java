@@ -1,5 +1,3 @@
-import java.util.*;
-
 class Solution {
     public static void main(String[] args) {
         int arr[] = {1,5,7,8,5,3,4,2,1};
@@ -10,7 +8,6 @@ class Solution {
     }
 
     static int longestSubsequence(int[] arr, int difference) {
-        ArrayList<Integer> ban = new ArrayList<Integer>();
         int curNum = 0;
         int curMax = 0;
         int max = 0;
