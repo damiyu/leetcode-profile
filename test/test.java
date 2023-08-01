@@ -1,9 +1,12 @@
 package leetcode.test;
-import java.util.*;
 
 class Test {
     public static void main(String[] args) {
-        System.out.println(rngLineSort(1,10,50,'+',false));
+        int[] a = {1,2,3,4};
+
+        a[0] = a[3];
+        a[3] += 1;
+        System.out.println(a[0] + ", " + a[3]);
     }
     
     public static int rng(int min, int max) {
@@ -27,30 +30,6 @@ class Test {
         line += array[0];
         for (int i = 1; i < size; i++) {
             line = line + delim + array[i];
-        }
-
-        return line;
-    }
-
-    public static String rngLineSort(int min, int max, int size, char delim, boolean isAscending) {
-        int [] array = rngArray(min, max, size);
-        Arrays.sort(array);
-        String line = "";
-
-        if (isAscending) {
-            line += array[0];
-            for (int i = 1; i < size; i++) {
-                line = line + delim + array[i];
-            }
-            return line;
-        }
-
-        ArrayList<Integer> des = new ArrayList<Integer>();
-        for (int num : array) des.add(num);
-        Collections.sort(des, Collections.reverseOrder());
-        line += des.get(0);
-        for (int i = 1; i < size; i++) {
-            line = line + delim + des.get(i);
         }
 
         return line;
