@@ -54,6 +54,12 @@
         "Memory":99.96
     },
     {
+        "Problem":"17",
+        "Type":"Medium",
+        "Runtime":100.00,
+        "Memory":99.77
+    },
+    {
         "Problem":"50",
         "Type":"Medium",
         "Runtime":100.00,
@@ -64,6 +70,12 @@
         "Type":"Medium",
         "Runtime":85.57,
         "Memory":95.60
+    },
+    {
+        "Problem":"139",
+        "Type":"Medium",
+        "Runtime":99.85,
+        "Memory":98.57
     },
     {
         "Problem":"234",
