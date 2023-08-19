@@ -48,10 +48,40 @@
         "Memory":6.28
     },
     {
+        "Problem":"9",
+        "Type":"Easy",
+        "Runtime":93.79,
+        "Memory":93.41
+    },
+    {
+        "Problem":"10",
+        "Type":"Hard",
+        "Runtime":100.00,
+        "Memory":89.95
+    },
+    {
+        "Problem":"12",
+        "Type":"Medium",
+        "Runtime":73.25,
+        "Memory":98.28
+    },
+    {
         "Problem":"13",
         "Type":"Easy",
         "Runtime":92.98,
         "Memory":99.96
+    },
+    {
+        "Problem":"14",
+        "Type":"Easy",
+        "Runtime":82.13,
+        "Memory":94.71
+    },
+    {
+        "Problem":"15",
+        "Type":"Medium",
+        "Runtime":99.72,
+        "Memory":97.91
     },
     {
         "Problem":"17",
@@ -60,10 +90,22 @@
         "Memory":99.77
     },
     {
+        "Problem":"33",
+        "Type":"Medium",
+        "Runtime":100.00,
+        "Memory":92.66
+    },
+    {
         "Problem":"50",
         "Type":"Medium",
         "Runtime":100.00,
         "Memory":91.10
+    },
+    {
+        "Problem":"74",
+        "Type":"Medium",
+        "Runtime":100.00,
+        "Memory":91.38
     },
     {
         "Problem":"77",
@@ -72,10 +114,28 @@
         "Memory":95.60
     },
     {
+        "Problem":"81",
+        "Type":"Medium",
+        "Runtime":100.0,
+        "Memory":90.76
+    },
+    {
+        "Problem":"86",
+        "Type":"Medium",
+        "Runtime":100.0,
+        "Memory":98.21
+    },
+    {
         "Problem":"139",
         "Type":"Medium",
         "Runtime":99.85,
         "Memory":98.57
+    },
+    {
+        "Problem":"215",
+        "Type":"Medium",
+        "Runtime":88.35,
+        "Memory":95.42
     },
     {
         "Problem":"234",
@@ -84,10 +144,16 @@
         "Memory":79.58
     },
     {
+        "Problem":"239",
+        "Type":"Hard",
+        "Runtime":5.30,
+        "Memory":29.92
+    },
+    {
         "Problem":"383",
         "Type":"Easy",
-        "Runtime":5.15,
-        "Memory":99.50
+        "Runtime":98.41,
+        "Memory":98.93
     },
     {
         "Problem":"412",
@@ -106,6 +172,18 @@
         "Type":"Medium",
         "Runtime":100.00,
         "Memory":82.23
+    },
+    {
+        "Problem":"518",
+        "Type":"Medium",
+        "Runtime":100.00,
+        "Memory":93.69
+    },
+    {
+        "Problem":"542",
+        "Type":"Medium",
+        "Runtime":6.12,
+        "Memory":95.87
     },
     {
         "Problem":"735",
@@ -138,10 +216,16 @@
         "Memory":98.96
     },
     {
+        "Problem":"1615",
+        "Type":"Medium",
+        "Runtime":100.00,
+        "Memory":73.38
+    },
+    {
         "Problem":"1672",
         "Type":"Easy",
         "Runtime":100.00,
-        "Memory":61.45
+        "Memory":81.39
     },
     {
         "Problem":"1870",
@@ -154,5 +238,17 @@
         "Type":"Hard",
         "Runtime":97.80,
         "Memory":76.64
+    },
+    {
+        "Problem":"2369",
+        "Type":"Hard",
+        "Runtime":85.71,
+        "Memory":78.57
+    },
+    {
+        "Problem":"2616",
+        "Type":"Medium",
+        "Runtime":93.02,
+        "Memory":96.12
     }
 ]

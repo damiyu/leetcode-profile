@@ -1,11 +1,19 @@
 package test;
+import java.util.*;
+
 public class Test {
     public static void main(String[] args) {
-        int[] a = {1,2,3,4};
+        ArrayList<Integer[]> nums = new ArrayList<>(Arrays.asList(new Integer[][]{{1,2}}));
+        Set<Integer[]> s = new HashSet<>();
+        Integer[] a = new Integer[]{1,2};
 
-        a[0] = a[3];
-        a[3] += 1;
-        System.out.println(a[0] + ", " + a[3]);
+        s.add(a);
+        a[0] = 10;
+        if (s.contains(a)) {
+            System.out.println("Worked");
+        } else {
+            System.out.println("No");
+        }
     }
     
     public static int rng(int min, int max) {
