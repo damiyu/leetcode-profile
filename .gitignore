@@ -1,3 +1,5 @@
+# Ignore all java compiled classes
 *.class
 
+# Ignore the testing directory
 /playground
