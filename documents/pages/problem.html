@@ -9,11 +9,35 @@
     </head>
 
     <body>
+        <div id="toolBarDiv">
+            <div id="titleDiv"><p id="titleText">Darren's LeetCode Profile</p></div>
+            <p id="linksText">Gmail: 
+                <a id="gmailLink">darrenyu2003@gmail.com</a> | 
+                <a id="linkedinLink" href="https://www.linkedin.com/in/darren-yu-a38913246" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+                <a id="leetcodeLink" href="https://leetcode.com/bitsforbasics" target="_blank" rel="noopener noreferrer">LeetCode</a>
+            </p>
+
+            <div id="searchDiv">
+                <img id="searchIcon" src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="Another">
+                <input id="searchInput" type="number" placeholder="Search ..." autocomplete="off">
+            </div>
+            <input type="submit" id="submitButton">
+        </div>
+
+        <div id="problemContainer">
+            <!--Script will add problem information-->
+        </div>
+
+        <div id="codeDiv">
+            <div id="codeBox">
+                <!--Script will generate the text file line by line-->
+            </div>
+        </div>
+
+        <script src="../scripts/website/problem.js" type="module"></script>
     </body>
 
     <footer>
-        <div id="copyRight">
-            <p id="copyText">&copy; Darren Yu</p>
-        </div>
+        <div id="copyRight"><p id="copyText">&copy; 2023 Darren Yu | Developer/Designer: Darren Yu | Server Host: Github</p></div>
     </footer>
 </html>

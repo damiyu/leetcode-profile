@@ -16,3 +16,27 @@ public class Solution {
         return front.substring(0, p);
     }
 }
+
+// My Original Solution
+/*class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        String pre = "";
+        char save = 0, cur = 0;
+
+        if (strs[0].length() == 0) return pre;
+        
+        for (int i = 0; i < strs[0].length(); i++) {
+            save = strs[0].charAt(i);
+
+            for (String str : strs) {
+                if (str.length() <= i || str.charAt(i) != save) {
+                    return pre;
+                }
+            }
+
+            pre += save;
+        }
+
+        return pre;
+    }
+}*/

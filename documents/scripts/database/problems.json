@@ -1,0 +1,704 @@
+[
+	{
+		"number": "1",
+		"difficulty": "Easy",
+		"date": "Jul 29, 2023",
+		"language": "Java",
+		"runtime": "99.42",
+		"memory": "48.60",
+		"help": "No"
+	},
+	{
+		"number": "2",
+		"difficulty": "Medium",
+		"date": "Jul 29, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "86.48",
+		"help": "No"
+	},
+	{
+		"number": "3",
+		"difficulty": "Medium",
+		"date": "Jul 30, 2023",
+		"language": "Java",
+		"runtime": "75.38",
+		"memory": "61.41",
+		"help": "No"
+	},
+	{
+		"number": "4",
+		"difficulty": "Hard",
+		"date": "Sep 21, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "89.77",
+		"help": "No"
+	},
+	{
+		"number": "5",
+		"difficulty": "Medium",
+		"date": "Jan 3, 2023",
+		"language": "Java",
+		"runtime": "5.00",
+		"memory": "5.20",
+		"help": "No"
+	},
+	{
+		"number": "6",
+		"difficulty": "Medium",
+		"date": "Jul 21, 2023",
+		"language": "Java",
+		"runtime": "99.89",
+		"memory": "93.79",
+		"help": "No"
+	},
+	{
+		"number": "7",
+		"difficulty": "Medium",
+		"date": "Jan 5, 2023",
+		"language": "Java",
+		"runtime": "8.20",
+		"memory": "5.85",
+		"help": "No"
+	},
+	{
+		"number": "8",
+		"difficulty": "Medium",
+		"date": "Mar 12, 2023",
+		"language": "Java",
+		"runtime": "9.91",
+		"memory": "6.12",
+		"help": "No"
+	},
+	{
+		"number": "9",
+		"difficulty": "Easy",
+		"date": "Aug 8, 2023",
+		"language": "Java",
+		"runtime": "82.48",
+		"memory": "85.80",
+		"help": "No"
+	},
+	{
+		"number": "10",
+		"difficulty": "Hard",
+		"date": "Aug 12, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "84.40",
+		"help": "Yes"
+	},
+	{
+		"number": "11",
+		"difficulty": "Medium",
+		"date": "Sep 4, 2023",
+		"language": "Java",
+		"runtime": "99.50",
+		"memory": "89.29",
+		"help": "Yes"
+	},
+	{
+		"number": "12",
+		"difficulty": "Medium",
+		"date": "Aug 14, 2023",
+		"language": "Java",
+		"runtime": "62.76",
+		"memory": "96.80",
+		"help": "No"
+	},
+	{
+		"number": "13",
+		"difficulty": "Easy",
+		"date": "Dec 13, 2022",
+		"language": "Java",
+		"runtime": "75.88",
+		"memory": "99.95",
+		"help": "No"
+	},
+	{
+		"number": "14",
+		"difficulty": "Easy",
+		"date": "Aug 11, 2023",
+		"language": "Java",
+		"runtime": "82.97",
+		"memory": "89.67",
+		"help": "No"
+	},
+	{
+		"number": "15",
+		"difficulty": "Medium",
+		"date": "Aug 15, 2023",
+		"language": "Java",
+		"runtime": "99.62",
+		"memory": "96.80",
+		"help": "No"
+	},
+	{
+		"number": "16",
+		"difficulty": "Medium",
+		"date": "Aug 22, 2023",
+		"language": "Java",
+		"runtime": "95.61",
+		"memory": "93.16",
+		"help": "No"
+	},
+	{
+		"number": "17",
+		"difficulty": "Medium",
+		"date": "Aug 3, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "92.74",
+		"help": "No"
+	},
+	{
+		"number": "19",
+		"difficulty": "Medium",
+		"date": "Sep 21, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "85.25",
+		"help": "No"
+	},
+	{
+		"number": "20",
+		"difficulty": "Easy",
+		"date": "Aug 20, 2023",
+		"language": "Java",
+		"runtime": "98.78",
+		"memory": "88.83",
+		"help": "No"
+	},
+	{
+		"number": "21",
+		"difficulty": "Easy",
+		"date": "Aug 31, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "97.80",
+		"help": "No"
+	},
+	{
+		"number": "26",
+		"difficulty": "Easy",
+		"date": "Sep 10, 2023",
+		"language": "Java",
+		"runtime": "97.29",
+		"memory": "90.99",
+		"help": "No"
+	},
+	{
+		"number": "27",
+		"difficulty": "Easy",
+		"date": "Sep 17, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "99.13",
+		"help": "No"
+	},
+	{
+		"number": "33",
+		"difficulty": "Medium",
+		"date": "Aug 7, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "80.30",
+		"help": "No"
+	},
+	{
+		"number": "35",
+		"difficulty": "Easy",
+		"date": "Sep 23, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "86.57",
+		"help": "No"
+	},
+	{
+		"number": "50",
+		"difficulty": "Medium",
+		"date": "Jul 24, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "86.57",
+		"help": "Yes"
+	},
+	{
+		"number": "68",
+		"difficulty": "Hard",
+		"date": "Aug 24, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "97.13",
+		"help": "No"
+	},
+	{
+		"number": "74",
+		"difficulty": "Medium",
+		"date": "Aug 6, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "78.29",
+		"help": "No"
+	},
+	{
+		"number": "77",
+		"difficulty": "Medium",
+		"date": "Aug 1, 2023",
+		"language": "Java",
+		"runtime": "85.96",
+		"memory": "91.21",
+		"help": "No"
+	},
+	{
+		"number": "81",
+		"difficulty": "Medium",
+		"date": "Aug 10, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "78.20",
+		"help": "No"
+	},
+	{
+		"number": "86",
+		"difficulty": "Medium",
+		"date": "Aug 15, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "96.71",
+		"help": "No"
+	},
+	{
+		"number": "92",
+		"difficulty": "Medium",
+		"date": "Sep 7, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "92.48",
+		"help": "No"
+	},
+	{
+		"number": "97",
+		"difficulty": "Medium",
+		"date": "Aug 25, 2023",
+		"language": "Java",
+		"runtime": "14.14",
+		"memory": "78.51",
+		"help": "No"
+	},
+	{
+		"number": "118",
+		"difficulty": "Easy",
+		"date": "Sep 8, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "84.89",
+		"help": "No"
+	},
+	{
+		"number": "135",
+		"difficulty": "Hard",
+		"date": "Sep 13, 2023",
+		"language": "Java",
+		"runtime": "99.94",
+		"memory": "98.66",
+		"help": "No"
+	},
+	{
+		"number": "138",
+		"difficulty": "Medium",
+		"date": "Sep 5, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "75.50",
+		"help": "No"
+	},
+	{
+		"number": "139",
+		"difficulty": "Medium",
+		"date": "Aug 4, 2023",
+		"language": "Java",
+		"runtime": "99.71",
+		"memory": "94.11",
+		"help": "No"
+	},
+	{
+		"number": "141",
+		"difficulty": "Easy",
+		"date": "Sep 4, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "94.46",
+		"help": "No"
+	},
+	{
+		"number": "168",
+		"difficulty": "Easy",
+		"date": "Aug 22, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "81.20",
+		"help": "No"
+	},
+	{
+		"number": "215",
+		"difficulty": "Medium",
+		"date": "Aug 13, 2023",
+		"language": "Java",
+		"runtime": "86.79",
+		"memory": "92.25",
+		"help": "No"
+	},
+	{
+		"number": "225",
+		"difficulty": "Easy",
+		"date": "Aug 28, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "87.51",
+		"help": "No"
+	},
+	{
+		"number": "234",
+		"difficulty": "Easy",
+		"date": "Jul 26, 2023",
+		"language": "Java",
+		"runtime": "81.55",
+		"memory": "77.78",
+		"help": "No"
+	},
+	{
+		"number": "239",
+		"difficulty": "Hard",
+		"date": "Aug 18, 2023",
+		"language": "Java",
+		"runtime": "5.10",
+		"memory": "29.42",
+		"help": "No"
+	},
+	{
+		"number": "287",
+		"difficulty": "Medium",
+		"date": "Sep 19, 2023",
+		"language": "Java",
+		"runtime": "87.14",
+		"memory": "97.47",
+		"help": "No"
+	},
+	{
+		"number": "338",
+		"difficulty": "Easy",
+		"date": "Sep 1, 2023",
+		"language": "Java",
+		"runtime": "99.54",
+		"memory": "92.70",
+		"help": "No"
+	},
+	{
+		"number": "377",
+		"difficulty": "Medium",
+		"date": "Sep 9, 2023",
+		"language": "Java",
+		"runtime": "72.40",
+		"memory": "83.83",
+		"help": "Yes"
+	},
+	{
+		"number": "383",
+		"difficulty": "Easy",
+		"date": "Aug 6, 2023",
+		"language": "Java",
+		"runtime": "95.25",
+		"memory": "97.83",
+		"help": "No"
+	},
+	{
+		"number": "392",
+		"difficulty": "Easy",
+		"date": "Sep 21, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "95.27",
+		"help": "No"
+	},
+	{
+		"number": "403",
+		"difficulty": "Hard",
+		"date": "Aug 27, 2023",
+		"language": "Java",
+		"runtime": "66.17",
+		"memory": "70.72",
+		"help": "Yes"
+	},
+	{
+		"number": "412",
+		"difficulty": "Easy",
+		"date": "Dec 23, 2022",
+		"language": "Java",
+		"runtime": "99.81",
+		"memory": "99.97",
+		"help": "No"
+	},
+	{
+		"number": "445",
+		"difficulty": "Medium",
+		"date": "Jul 18, 2023",
+		"language": "Java",
+		"runtime": "9.27",
+		"memory": "8.60",
+		"help": "No"
+	},
+	{
+		"number": "459",
+		"difficulty": "Easy",
+		"date": "Sep 3, 2023",
+		"language": "Java",
+		"runtime": "98.64",
+		"memory": "73.11",
+		"help": "No"
+	},
+	{
+		"number": "486",
+		"difficulty": "Medium",
+		"date": "Jul 28, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "80.67",
+		"help": "No"
+	},
+	{
+		"number": "518",
+		"difficulty": "Medium",
+		"date": "Aug 11, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "82.61",
+		"help": "Yes"
+	},
+	{
+		"number": "542",
+		"difficulty": "Medium",
+		"date": "Aug 11, 2023",
+		"language": "Java",
+		"runtime": "6.28",
+		"memory": "92.94",
+		"help": "No"
+	},
+	{
+		"number": "646",
+		"difficulty": "Medium",
+		"date": "Aug 26, 2023",
+		"language": "Java",
+		"runtime": "98.90",
+		"memory": "70.40",
+		"help": "Yes"
+	},
+	{
+		"number": "688",
+		"difficulty": "Medium",
+		"date": "Sep 3, 2023",
+		"language": "Java",
+		"runtime": "54.18",
+		"memory": "90.60",
+		"help": "Yes"
+	},
+	{
+		"number": "712",
+		"difficulty": "Medium",
+		"date": "Sep 3, 2023",
+		"language": "Java",
+		"runtime": "97.70",
+		"memory": "91.19",
+		"help": "Yes"
+	},
+	{
+		"number": "725",
+		"difficulty": "Medium",
+		"date": "Sep 6, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "95.89",
+		"help": "No"
+	},
+	{
+		"number": "735",
+		"difficulty": "Medium",
+		"date": "Jul 19, 2023",
+		"language": "Java",
+		"runtime": "15.98",
+		"memory": "16.69",
+		"help": "No"
+	},
+	{
+		"number": "767",
+		"difficulty": "Medium",
+		"date": "Aug 23, 2023",
+		"language": "Java",
+		"runtime": "91.51",
+		"memory": "94.11",
+		"help": "No"
+	},
+	{
+		"number": "847",
+		"difficulty": "Hard",
+		"date": "Sep 18, 2023",
+		"language": "Java",
+		"runtime": "91.75",
+		"memory": "90.88",
+		"help": "Yes"
+	},
+	{
+		"number": "852",
+		"difficulty": "Medium",
+		"date": "Jul 26, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "64.78",
+		"help": "No"
+	},
+	{
+		"number": "876",
+		"difficulty": "Easy",
+		"date": "Aug 1, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "67.53",
+		"help": "No"
+	},
+	{
+		"number": "1218",
+		"difficulty": "Medium",
+		"date": "Sep 4, 2023",
+		"language": "Java",
+		"runtime": "5.20",
+		"memory": "99.93",
+		"help": "No"
+	},
+	{
+		"number": "1282",
+		"difficulty": "Medium",
+		"date": "Sep 11, 2023",
+		"language": "Java",
+		"runtime": "83.60",
+		"memory": "94.31",
+		"help": "No"
+	},
+	{
+		"number": "1337",
+		"difficulty": "Easy",
+		"date": "Dec 24, 2022",
+		"language": "Java",
+		"runtime": "99.32",
+		"memory": "99.88",
+		"help": "No"
+	},
+	{
+		"number": "1342",
+		"difficulty": "Easy",
+		"date": "Dec 25, 2022",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "95.48",
+		"help": "No"
+	},
+	{
+		"number": "1584",
+		"difficulty": "Medium",
+		"date": "Sep 15, 2023",
+		"language": "Java",
+		"runtime": "48.39",
+		"memory": "46.17",
+		"help": "No"
+	},
+	{
+		"number": "1615",
+		"difficulty": "Medium",
+		"date": "Aug 18, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "61.82",
+		"help": "No"
+	},
+	{
+		"number": "1658",
+		"difficulty": "Medium",
+		"date": "Sep 20, 2023",
+		"language": "Java",
+		"runtime": "95.86",
+		"memory": "88.40",
+		"help": "No"
+	},
+	{
+		"number": "1672",
+		"difficulty": "Easy",
+		"date": "Aug 6, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "69.80",
+		"help": "No"
+	},
+	{
+		"number": "1870",
+		"difficulty": "Medium",
+		"date": "Jul 26, 2023",
+		"language": "Java",
+		"runtime": "67.10",
+		"memory": "73.69",
+		"help": "No"
+	},
+	{
+		"number": "2141",
+		"difficulty": "Hard",
+		"date": "Jul 27, 2023",
+		"language": "Java",
+		"runtime": "97.00",
+		"memory": "76.64",
+		"help": "Yes"
+	},
+	{
+		"number": "2366",
+		"difficulty": "Hard",
+		"date": "Aug 30, 2023",
+		"language": "Java",
+		"runtime": "80.91",
+		"memory": "90.60",
+		"help": "Yes"
+	},
+	{
+		"number": "2369",
+		"difficulty": "Medium",
+		"date": "Aug 13, 2023",
+		"language": "Java",
+		"runtime": "86.71",
+		"memory": "66.75",
+		"help": "No"
+	},
+	{
+		"number": "2483",
+		"difficulty": "Medium",
+		"date": "Aug 29, 2023",
+		"language": "Java",
+		"runtime": "99.60",
+		"memory": "89.28",
+		"help": "No"
+	},
+	{
+		"number": "2616",
+		"difficulty": "Medium",
+		"date": "Aug 9, 2023",
+		"language": "Java",
+		"runtime": "55.75",
+		"memory": "81.86",
+		"help": "No"
+	},
+	{
+		"number": "2707",
+		"difficulty": "Medium",
+		"date": "Sep 2, 2023",
+		"language": "Java",
+		"runtime": "80.70",
+		"memory": "96.21",
+		"help": "Yes"
+	}
+]

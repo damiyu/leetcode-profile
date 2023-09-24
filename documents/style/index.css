@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    background-color: purple;
+    background-color: plum;
     background-attachment: fixed;
 }
 
@@ -11,40 +11,45 @@ footer {
     margin-top: auto;
 }
 
+.stats {
+    margin-top: -10px;
+    color: deepskyblue;
+}
+
 .solutions {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin: 2vh;
 }
 
-.problems {
+.problemDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 325px;
+    width: 225px;
     border: 4px solid blue;
     border-radius: 25px;
 
-    margin: 20px;
-    margin-top: 50px;
+    font-family: Anton;
+    font-size: 18px;
+    text-align: center;
+    word-wrap: break-word;
     background-color: gold;
 }
 
-.problems:hover {
-    border: 6px solid red;
-    margin: 18px;
+.problemDiv:hover {
+    cursor: pointer;
+    border: 4px solid red;
 }
 
-.solutionsText {
-    margin: 15px;
-    width: 200px;
-    height: 250px;
-
-    font-family: Anton;
-    font-size: 20px;
-    text-align: center;
-    word-wrap: break-word;
-}
-
-.solutionsTitle {
-    margin: 0px;
+.problemTitle {
+    width: 180px;
+    margin-top: -4px;
     border: 6px double blue;
     border-radius: 10px;
 
@@ -54,116 +59,306 @@ footer {
     color: brown;
 }
 
-.solutionsBar {
-    color: blue;
+.problemBar {
+    width: 180px;
+    margin-top: -18px;
+    margin-bottom: -10px;
     border: 5px double;
-    margin-bottom: 0px;
+    color: blue;
 }
 
 .type {
-    font-family: BungeeShade;
-    font-weight: bold;
-
+    width: 200px;
+    margin-bottom: 0px;
     border-radius: 30px;
-    color: greenyellow;
-    background-image: radial-gradient(black 30%,greenyellow);
+    background-image: radial-gradient(black 30%, white);
+
+    font-family: BungeeShade;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
-.time, .memory {
+.props {
+    margin-bottom: -10px;
+}
+
+.date, .lang, .time, .memory, .help {
     border-radius: 4px;
-    color: brown;
-    background-color: rgb(128,128,128,75%);
+    background-color: rgb(0, 0, 0, 35%);
+
+    color: cyan;
+}
+
+.date {
+    color: purple;
+}
+
+.help {
+    color: blue;
+}
+
+#toolBarDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    height: 15vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+
+    background-color: rgb(120, 120, 120, 80%);
 }
 
 #titleDiv {
-    margin-left: 35vw;
-    margin-right: 35vw;
-    border-radius: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1vw;
+    height: 10vh;
+    width: 25vw;
+
     border: 0.5vh solid blue;
+    border-radius: 1vh;
     background-color: gold;
 }
 
-#titleText{
+#titleText {
+    width: 25vw;
     font-family: Lobster;
     font-size: 2.5vw;
-    margin: 1vh;
     font-weight: bold;
     text-align: center;
     color: brown;
 }
 
-#tools {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
+#linksText {
+    margin-left: 1vw;
+    width: 40vw;
 
-#circle {
-    border-radius: 50%;
-    background-image: conic-gradient(yellowgreen 0% 20%, gold 20% 90%, crimson 90% 100%);
-    height: 250px;
-    width: 250px;
-    border: 10px solid black;
-}
-
-#submitDiv {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 100px;
-    background-color: purple;
-    width: 450px;
-}
-
-#userInput {
-    font-family: Lobster;
-    width: 300px;
-    height: 50px;
-    margin-left: 20px;
-    border: none;
-    background-color: white;
-    font-size: 24px;
-    white-space: nowrap;
-    color: gray;
+    font-size: 1.5vw;
+    font-weight: bold;
     text-align: left;
-    left: 100px;
-    outline: none;
+    color: black;
 }
 
-#submit {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
+#linkedinLink, #leetcodeLink, #gmailLink {
+    text-decoration: none;
+    color: bisque;
+}
+
+#linkedinLink:hover, #leetcodeLink:hover, #gmailLink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+}
+
+#searchDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3vw;
+    height: 8vh;
+    width: 20vw;
+
+    border: 0.5vh solid blue;
+    border-radius: 10vh;
     background-color: gold;
+}
+
+#searchIcon {
+    margin-left: 0.5vw;
+    height: 4vh;
+    width: 2vw;
+}
+
+#searchInput {
+    height: 6vh;
+    width: 15vw;
+    padding: 0vw;
+    margin-left: 0.5vw;
+    border: none;
+    outline: none;
+
+    font-family: Anton;
+    font-size: 1.5vw;
+    color: gray;
+    background-color: rgb(0, 0, 0, 0%);
+}
+
+#submitButton {
+    height: 7.5vh;
+    width: 5.5vw;
+    padding: 0vw;
+    margin-left: 1vw;
+    border: 0.5vh solid blue;
+    border-radius: 1vh;
 
     font-family: Lobster;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
     color: brown;
-
-    border-width: 0.5vh;
-    border-style: solid;
-    border-color: rgb(0,0,255,65%);
+    background-color: gold;
 }
 
-#submit:hover {
-    border-color: blue;
+#submitButton:hover {
+    cursor: pointer;
+    background-color: bisque;
+}
+
+#leetCodeStats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    gap: 5vw;
+}
+
+#problemStatContainer, #pieChartContainer, #prevSearchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#statsText, #pieChartText, #prevSearchText {
+    margin-bottom: 2px;
+
+    font-family: Pridi;
+    font-size: 24px;
+    text-align: center;
+    color: navy;
+}
+
+#problemStatBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 325px;
+    width: 325px;
+    border-radius: 25px;
+    background-color: navy;
+}
+
+#problemStatDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 310px;
+    width: 310px;
+    border-radius: 20px;
+    background-color: wheat;
+
+    font-family: Lobster;
+    font-size: 18px;
+    text-align: center;
+    color: navy;
+}
+
+#problemStatTitle {
+    width: 260px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    font-family: Anton;
+    font-size: 24px;
+    color: brown;
+}
+
+#meanRun, #meanMem {
+    margin-top: -10px;
+
+    font-family: Anton;
+    font-size: 18px;
+}
+
+#pieChartBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 325px;
+    width: 325px;
+    z-index: -1;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, navy 0% 22.5%, gold 22.5% 37.5%, navy 37.5% 62.5%, gold 62.5% 77.5%, navy 77.5% 100%);
+}
+
+#pieChart {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: navy;
+}
+
+#solutionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftPageButtonBorder, #rightPageButtonBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 75px;
+    border-radius: 20px;
+    background-color: purple;
+}
+
+#leftPageButton, #rightPageButton {
+    height: 90px;
+    width: 65px;
+    border: none;
+    border-radius: 17.5px;
+
+    font-family: Anton;
+    font-size: 28px;
+    color: blue;
+    background-color: gold;
+}
+
+#leftPageButton:hover, #rightPageButton:hover {
+    cursor: pointer;
+    background-color: bisque;
 }
 
 #copyRight {
     display: flex;
-    margin-top: 30px;
-    border-radius: 10px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+    height: 8vh;
+    border-radius: 1vh;
     background-color: gray;
 }
 
 #copyText {
-    font-size: 20px;
+    margin-left: 1vw;
+    font-size: 2.5vh;
     font-weight: bold;
-    margin-left: 10px;
     color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 @font-face {
@@ -179,4 +374,9 @@ footer {
 @font-face {
     font-family: Lobster;
     src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Pridi;
+    src: url(../fonts/Pridi/Pridi-ExtraLight.ttf);
 }

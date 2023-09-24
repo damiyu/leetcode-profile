@@ -3,7 +3,7 @@ import java.util.*;
 
 /*
  * 459: Repeated Substring Pattern
- * Last Updated: Aug 21, 2023
+ * Last Updated: Sep 3, 2023
  */
 
 public class Solution {
@@ -21,7 +21,6 @@ public class Solution {
 
             if (j == 26) {
                 idx = i;
-                System.out.println(idx);
                 break;
             }
             j = 0;

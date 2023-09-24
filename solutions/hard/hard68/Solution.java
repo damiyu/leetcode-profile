@@ -3,7 +3,7 @@ import java.util.*;
 
 /*
  * 68: Text Justification
- * Last Updated: Aug 23, 2023
+ * Last Updated: Aug 24, 2023
  * Solve Time: 56 min & 26 sec
  */
 public class Solution {

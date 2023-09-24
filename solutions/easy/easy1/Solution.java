@@ -21,3 +21,22 @@ public class Solution {
         return new int[] {0, 1};
     }
 }
+
+// My Original Solution
+/*class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] sum = new int[2];
+
+        for (int i = 0; i < nums.length; i += 1) {
+            for (int j = i + 1; j < nums.length; j += 1) {
+                if (nums[i] + nums[j] == target) {
+                    sum[0] = i;
+                    sum[1] = j;
+                    return sum;
+                }
+            }
+        }
+
+        return sum;
+    }
+}*/
