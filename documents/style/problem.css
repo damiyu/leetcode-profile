@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -15,7 +19,7 @@ footer {
     margin-bottom: -10px;
 }
 
-.codeLine {
+.code-line {
     height: 20px;
     width: 1200px;
     margin-bottom: -10px;
@@ -25,7 +29,7 @@ footer {
     color: navy;
 }
 
-#toolBarDiv {
+#tool-bar-div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,7 +42,7 @@ footer {
     background-color: rgb(120, 120, 120, 80%);
 }
 
-#titleDiv {
+#title-div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,12 +55,12 @@ footer {
     background-color: gold;
 }
 
-#titleDiv:hover {
+#title-div:hover {
     cursor: pointer;
     border-color: red;
 }
 
-#titleText {
+#title-text {
     width: 25vw;
     font-family: Lobster;
     font-size: 2.5vw;
@@ -65,7 +69,7 @@ footer {
     color: brown;
 }
 
-#linksText {
+#links-text {
     margin-left: 1vw;
     width: 40vw;
 
@@ -75,18 +79,22 @@ footer {
     color: black;
 }
 
-#linkedinLink, #leetcodeLink, #gmailLink {
+#linkedin-link,
+#leetcode-link,
+#gmail-link {
     text-decoration: none;
     color: bisque;
 }
 
-#linkedinLink:hover, #leetcodeLink:hover, #gmailLink:hover {
+#linkedin-link:hover,
+#leetcode-link:hover,
+#gmail-link:hover {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: aquamarine;
 }
 
-#searchDiv {
+#search-div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -99,13 +107,13 @@ footer {
     background-color: gold;
 }
 
-#searchIcon {
+#search-icon {
     margin-left: 0.5vw;
     height: 4vh;
     width: 2vw;
 }
 
-#searchInput {
+#search-input {
     height: 6vh;
     width: 15vw;
     padding: 0vw;
@@ -119,7 +127,7 @@ footer {
     background-color: rgb(0, 0, 0, 0%);
 }
 
-#submitButton {
+#search-button {
     height: 7.5vh;
     width: 5.5vw;
     padding: 0vw;
@@ -134,12 +142,12 @@ footer {
     background-color: gold;
 }
 
-#submitButton:hover {
+#search-button:hover {
     cursor: pointer;
     background-color: bisque;
 }
 
-#problemContainer {
+#problem-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -148,7 +156,7 @@ footer {
     margin-top: 15vh;
 }
 
-#problemNull {
+#problem-null {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -165,12 +173,12 @@ footer {
     background-color: gold;
 }
 
-#problemNull:hover {
+#problem-null:hover {
     cursor: pointer;
     border-color: red;
 }
 
-#problemDiv {
+#problem-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,7 +195,7 @@ footer {
     background-color: gold;
 }
 
-#problemTitle {
+#problem-title {
     width: 180px;
     margin-top: -4px;
     border: 6px double blue;
@@ -199,7 +207,7 @@ footer {
     color: brown;
 }
 
-#problemBar {
+#problem-bar {
     width: 180px;
     margin-top: -18px;
     margin-bottom: -10px;
@@ -219,7 +227,11 @@ footer {
     color: white;
 }
 
-#date, #lang, #time, #memory, #help {
+#date,
+#lang,
+#time,
+#memory,
+#help {
     border-radius: 4px;
     background-color: rgb(0, 0, 0, 35%);
 
@@ -234,11 +246,11 @@ footer {
     color: blue;
 }
 
-#problemImage {
+#problem-image {
     border: 10px groove goldenrod;
 }
 
-#codeDiv {
+#code-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,7 +258,7 @@ footer {
     margin-top: 20px;
 }
 
-#codeBox {
+#code-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,7 +270,7 @@ footer {
     background-image: linear-gradient(135deg, bisque, violet, aquamarine);
 }
 
-#copyRight {
+#copy-right {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -273,7 +285,7 @@ footer {
     background-color: gray;
 }
 
-#copyText {
+#copy-text {
     margin-left: 1vw;
     font-size: 2.5vh;
     font-weight: bold;

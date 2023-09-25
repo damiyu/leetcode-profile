@@ -4,9 +4,10 @@ init();
 
 async function init() {
     const problems = await Util.getJSON('../database/problems.json');
-    const problemNum = localStorage.getItem('problemNum');
+    const problemNum = localStorage.getItem('problem-num');
 
     homePage();
+    copyGmail();
     searchCall(problems);
 
     // Stops problem display if problem can't be found.
@@ -19,28 +20,37 @@ async function init() {
         buildContainer(true);
         displayImage(problem);
         displayProblemStats(problem);
-        fileTextDisplay(problem.difficulty, problem.number);
+        fileTextDisplay(problem);
     }
 }
 
 function homePage() {
-    const titleDivRef = document.getElementById('titleDiv');
+    const titleDivRef = document.getElementById('title-div');
     
     titleDivRef.addEventListener('click', function() {
         window.location = './index.html';
     });
 }
 
+function copyGmail() {
+    const link = document.getElementById('gmail-link');
+
+    link.addEventListener('click', function() {
+        navigator.clipboard.writeText(link.textContent);
+        alert("Gmail Copied to Clipboard");
+    });
+}
+
 function searchCall(problems) {
-    const searchRef = document.getElementById('submitButton');
-    const inputRef = document.getElementById('searchInput');
+    const searchRef = document.getElementById('search-button');
+    const inputRef = document.getElementById('search-input');
 
     searchRef.addEventListener('click', function () {
         let problemNum = inputRef.value;
 
         // If problem exists, set the search card to that problem idx.
         if (Util.problemSearch(problems, problemNum) != -1) {
-            localStorage.setItem('problemNum', problemNum);
+            localStorage.setItem('problem-num', problemNum);
             window.location = './problem.html';
         } else {
             alert("Sorry, but your requested search isn't in the database/incomplete. Try searching for another problem number.");
@@ -53,13 +63,13 @@ function searchCall(problems) {
 }
 
 function buildContainer(bool) {
-    const problemContainerRef = document.getElementById('problemContainer');
+    const problemContainerRef = document.getElementById('problem-container');
 
     // Display problem only if it exists.
     if (bool) {
-        problemContainerRef.innerHTML += `<div id="problemDiv">
-            <p id="problemTitle">Problem: #<span id="number">N/A</span></p>
-            <hr id="problemBar">
+        problemContainerRef.innerHTML += `<div id="problem-div">
+            <p id="problem-title">Problem: #<span id="number">N/A</span></p>
+            <hr id="problem-bar">
             <p id="type">N/A</p>
             <p class="props">Date: <span id="date">MMM DD, YYYY</span>
             <p class="props">Language: <span id="lang">N/A</span></p>
@@ -67,26 +77,29 @@ function buildContainer(bool) {
             <p class="props">Memory: <span id="memory">0.00</span></p>
             <p class="props">Received Help: <span id="help">Null</span></p>
         </div>
-        <img id="problemImage" src="../images/misc/blank.png" height="450px">`
+        <img id="problem-image" src="../images/misc/blank.png" height="450px">`
 
-        document.getElementById('codeBox').style.border = "2px solid navy";
+        document.getElementById('code-box').style.border = "2px solid navy";
     } else {
-        problemContainerRef.innerHTML = `<p id="problemNull">Please return to the home page and select a problem or search a problem!</p>`
-        document.getElementById('problemNull').addEventListener('click', function() {
+        problemContainerRef.innerHTML = `<p id="problem-null">Please return to the home page and select a problem or search a problem!</p>`
+        document.getElementById('problem-null').addEventListener('click', function() {
             window.location = './index.html';
         });
     }
 }
 
 function displayImage(problem) {
-    const problemImageRef = document.getElementById('problemImage');
+    const problemImageRef = document.getElementById('problem-image');
     let problemDiff = problem.difficulty;
 
     if (problemDiff == "Easy") problemDiff = "easy";
     else if (problemDiff == "Medium") problemDiff = "med";
     else if (problemDiff == "Hard") problemDiff = "hard";
     
-    problemImageRef.src = "../images/" + problemDiff + "/" + problemDiff + problem.number + ".png";
+    let path = "../images/" + problemDiff + "/" + problemDiff + problem.number + ".png", checkImg = new Image();
+    checkImg.onerror = function () {problemImageRef.src = "../images/misc/blank.png";}
+    checkImg.onload = function () {problemImageRef.src = path;}
+    checkImg.src = path;
 }
 
 function displayProblemStats(problem) {
@@ -124,17 +137,22 @@ function displayProblemStats(problem) {
     document.getElementById('help').textContent = problem.help;
 }
 
-async function fileTextDisplay(problemDiff, problemNumber) {
-    const codeBoxRef = document.getElementById('codeBox');
+async function fileTextDisplay(problem) {
+    const codeBoxRef = document.getElementById('code-box');
+    let diff = "easy", lang = "java";
 
     // Find the correct file path to the file.
-    if (problemDiff == "Easy") problemDiff = "easy";
-    else if (problemDiff == "Medium") problemDiff = "med";
-    else if (problemDiff == "Hard") problemDiff = "hard";
-    let fileText = await fetch('../../solutions/' + problemDiff + '/' + problemDiff + problemNumber + '/Solution.java');
+    if (problem.difficulty == "Medium") diff = "med";
+    else if (problem.difficulty == "Hard") diff = "hard";
+    if (problem.language == "C") lang = "c";
+    else if (problem.language == "C++") lang = "cpp";
+    else if (problem.language == "Python3") lang = "py";
+    else if (problem.language == "JavaScript") lang = "js";
+
+    let fileText = await fetch('../../solutions/' + diff + '/' + diff + problem.number + '/Solution.' + lang);
 
     // Some problems will have a different file name.
-    if (problemNumber == 225) fileText = await fetch('../../solutions/' + problemDiff + '/' + problemDiff + problemNumber + '/MyStack.java');
+    if (problem.number == 225) fileText = await fetch('../../solutions/' + diff + '/' + diff + problem.number + '/MyStack.java');
 
     // Segement the text by line breaks.
     let lines = (await fileText.text()).split('\n');
@@ -146,7 +164,7 @@ async function fileTextDisplay(problemDiff, problemNumber) {
 
         // Ignore all new lines in the file.
         if (lines[i] != "\r") {
-            newLine.setAttribute('class', 'codeLine');
+            newLine.setAttribute('class', 'code-line');
 
             // Add tabs when tabs are detected.
             for (let t = 0; lines[i].charCodeAt(t) == 32; t++) newLine.innerHTML += '&nbsp';

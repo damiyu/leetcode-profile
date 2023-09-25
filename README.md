@@ -1,25 +1,19 @@
 # Darren's Leetcode Folder
 
-### Average Runtime Percentile:
-N/A
+## TODO:
 
-### Average Memory Percentile:
-N/A
-
-# TODO:
-
-## General
+### General
 - [ ] Learn how to make a JPanel/Applet.
 - [ ] Review/brush up your python skills.
-- [ ] Review/brush up your C skills.
+- [ ] Review/brush up your C/C++ skills.
 
-## Index Page
-- [ ] Add the "date" and "help" variables to each problem's recipe card.
-- [ ] Finish the problem searching feature.
-- [ ] Add an average runtime and memory section.
-- [ ] Set up the pie chart of problems solved.
-- [ ] Set up local storage to know the problem number to set up the problem page.
+### Index Page
+- [ ] Solve a problem in Python3, C, C++, and Javascript to check the stat chart is inputting correctly.
 
-## Problem Page
-- [ ] Setup the design part (html/css).
-- [ ] From local storage, get the correct image and code of the problem.
+### Problem Page
+- [ ] Problems selected display the correct code.
+
+## My File Style Guide:
+- HTML/CSS (ids/class): kebab-case
+- Python (vars/objs/functions): snake_case
+- Java/JavaScript/C/C++ (vars/objs/function): camelCase

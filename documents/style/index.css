@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -25,7 +29,7 @@ footer {
     margin: 2vh;
 }
 
-.problemDiv {
+.problem-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,12 +46,12 @@ footer {
     background-color: gold;
 }
 
-.problemDiv:hover {
+.problem-div:hover {
     cursor: pointer;
     border: 4px solid red;
 }
 
-.problemTitle {
+.problem-title {
     width: 180px;
     margin-top: -4px;
     border: 6px double blue;
@@ -59,7 +63,7 @@ footer {
     color: brown;
 }
 
-.problemBar {
+.problem-bar {
     width: 180px;
     margin-top: -18px;
     margin-bottom: -10px;
@@ -83,7 +87,11 @@ footer {
     margin-bottom: -10px;
 }
 
-.date, .lang, .time, .memory, .help {
+.date,
+.lang,
+.time,
+.memory,
+.help {
     border-radius: 4px;
     background-color: rgb(0, 0, 0, 35%);
 
@@ -98,7 +106,7 @@ footer {
     color: blue;
 }
 
-#toolBarDiv {
+#tool-bar-div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -111,7 +119,7 @@ footer {
     background-color: rgb(120, 120, 120, 80%);
 }
 
-#titleDiv {
+#title-div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,7 +132,7 @@ footer {
     background-color: gold;
 }
 
-#titleText {
+#title-text {
     width: 25vw;
     font-family: Lobster;
     font-size: 2.5vw;
@@ -133,7 +141,7 @@ footer {
     color: brown;
 }
 
-#linksText {
+#links-text {
     margin-left: 1vw;
     width: 40vw;
 
@@ -143,18 +151,22 @@ footer {
     color: black;
 }
 
-#linkedinLink, #leetcodeLink, #gmailLink {
+#linkedin-link,
+#leetcode-link,
+#gmail-link {
     text-decoration: none;
     color: bisque;
 }
 
-#linkedinLink:hover, #leetcodeLink:hover, #gmailLink:hover {
+#linkedin-link:hover,
+#leetcode-link:hover,
+#gmail-link:hover {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: aquamarine;
 }
 
-#searchDiv {
+#search-div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -167,13 +179,13 @@ footer {
     background-color: gold;
 }
 
-#searchIcon {
+#search-icon {
     margin-left: 0.5vw;
     height: 4vh;
     width: 2vw;
 }
 
-#searchInput {
+#search-input {
     height: 6vh;
     width: 15vw;
     padding: 0vw;
@@ -187,7 +199,7 @@ footer {
     background-color: rgb(0, 0, 0, 0%);
 }
 
-#submitButton {
+#search-button {
     height: 7.5vh;
     width: 5.5vw;
     padding: 0vw;
@@ -202,12 +214,12 @@ footer {
     background-color: gold;
 }
 
-#submitButton:hover {
+#search-button:hover {
     cursor: pointer;
     background-color: bisque;
 }
 
-#leetCodeStats {
+#leet-code-stats {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -217,14 +229,18 @@ footer {
     gap: 5vw;
 }
 
-#problemStatContainer, #pieChartContainer, #prevSearchContainer {
+#problem-stat-container,
+#pie-chart-container,
+#prev-search-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#statsText, #pieChartText, #prevSearchText {
+#stats-text,
+#pie-chart-text,
+#prev-search-text {
     margin-bottom: 2px;
 
     font-family: Pridi;
@@ -233,7 +249,7 @@ footer {
     color: navy;
 }
 
-#problemStatBorder {
+#problem-stat-border {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +260,7 @@ footer {
     background-color: navy;
 }
 
-#problemStatDiv {
+#problem-stat-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,7 +276,7 @@ footer {
     color: navy;
 }
 
-#problemStatTitle {
+#problem-stat-title {
     width: 260px;
     margin-bottom: 15px;
     border: 2px solid black;
@@ -271,14 +287,15 @@ footer {
     color: brown;
 }
 
-#meanRun, #meanMem {
+#mean-runtime,
+#mean-memory {
     margin-top: -10px;
 
     font-family: Anton;
     font-size: 18px;
 }
 
-#pieChartBorder {
+#pie-chart-border {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,22 +308,22 @@ footer {
     background-image: linear-gradient(45deg, navy 0% 22.5%, gold 22.5% 37.5%, navy 37.5% 62.5%, gold 62.5% 77.5%, navy 77.5% 100%);
 }
 
-#pieChart {
+#pie-chart {
     height: 300px;
     width: 300px;
     border: 2px solid black;
     border-radius: 50%;
-    background-color: navy;
+    background-color: bisque;
 }
 
-#solutionsContainer {
+#solutions-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#leftPageButtonBorder, #rightPageButtonBorder {
+#left-page-button-border, #right-page-button-border {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,7 +334,8 @@ footer {
     background-color: purple;
 }
 
-#leftPageButton, #rightPageButton {
+#left-page-button,
+#right-page-button {
     height: 90px;
     width: 65px;
     border: none;
@@ -329,12 +347,13 @@ footer {
     background-color: gold;
 }
 
-#leftPageButton:hover, #rightPageButton:hover {
+#left-page-button:hover,
+#right-page-button:hover {
     cursor: pointer;
     background-color: bisque;
 }
 
-#copyRight {
+#copy-right {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -349,7 +368,7 @@ footer {
     background-color: gray;
 }
 
-#copyText {
+#copy-text {
     margin-left: 1vw;
     font-size: 2.5vh;
     font-weight: bold;

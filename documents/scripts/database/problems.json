@@ -180,6 +180,15 @@
 		"help": "No"
 	},
 	{
+		"number": "22",
+		"difficulty": "Medium",
+		"date": "Sep 25, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "97.51",
+		"help": "No"
+	},
+	{
 		"number": "26",
 		"difficulty": "Easy",
 		"date": "Sep 10, 2023",
@@ -212,7 +221,7 @@
 		"date": "Sep 23, 2023",
 		"language": "Java",
 		"runtime": "100.00",
-		"memory": "86.57",
+		"memory": "73.00",
 		"help": "No"
 	},
 	{
@@ -411,6 +420,15 @@
 		"language": "Java",
 		"runtime": "95.25",
 		"memory": "97.83",
+		"help": "No"
+	},
+	{
+		"number": "389",
+		"difficulty": "Easy",
+		"date": "Sep 25, 2023",
+		"language": "Java",
+		"runtime": "100.00",
+		"memory": "99.77",
 		"help": "No"
 	},
 	{

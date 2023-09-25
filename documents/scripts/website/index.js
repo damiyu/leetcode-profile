@@ -15,7 +15,7 @@ async function init() {
     setInterval(gradientBackgrounds, 25, n);
     copyGmail();
 
-    let searchProblem = localStorage.getItem('problemNum');
+    let searchProblem = localStorage.getItem('problem-num');
     const problems = await Util.getJSON('../database/problems.json');
     const problemCnts = statsMaker(problems);
     pieChartSetUp(problemCnts);
@@ -31,8 +31,8 @@ async function init() {
 }
 
 function gradientBackgrounds(n) {
-    const problemStatBorderRef = document.getElementById('problemStatBorder');
-    const pieChartBorderRef = document.getElementById('pieChartBorder');
+    const problemStatBorderRef = document.getElementById('problem-stat-border');
+    const pieChartBorderRef = document.getElementById('pie-chart-border');
 
     document.body.style.backgroundImage = "radial-gradient(circle, skyblue, violet " + n[0] +
                                                 "%, aquamarine, rgb(0, 0, " + n[2] + ", 80%))";
@@ -55,7 +55,7 @@ function gradientBackgrounds(n) {
         pieChartBorderRef.style.backgroundImage = "linear-gradient(45deg, navy 0% 20%, gold 20% 37.5%, " +
                                                                             "navy 37.5% 62.5%, gold 62.5% 80%, navy 80% 100%)";
     }
-    const pieChartRef = document.getElementById('pieChart');
+    const pieChartRef = document.getElementById('pie-chart');
     pieChartRef.style.transform = "rotate(-" + n[6] + "deg)";
     pieChartBorderRef.style.transform = "rotate(" + n[6] + "deg)";
 
@@ -67,7 +67,7 @@ function gradientBackgrounds(n) {
 }
 
 function copyGmail() {
-    const link = document.getElementById('gmailLink');
+    const link = document.getElementById('gmail-link');
 
     link.addEventListener('click', function() {
         navigator.clipboard.writeText(link.textContent);
@@ -76,7 +76,9 @@ function copyGmail() {
 }
 
 function statsMaker(problems) {
-    const statsInputRef = document.getElementsByClassName('statsInput');
+    const statsInputRef = document.getElementsByClassName('stats-input');
+    const meanRunRef = document.getElementById('mean-runtime');
+    const meanMemRef = document.getElementById('mean-memory');
     const langList = ["Java", "C", "C++", "JavaScript", "Python3"];
     let totalProblemCnt = problems.length, averageRun = 0.0, averageMem = 0.0;
     let problemStatsCnts = [problems.length, 0, 0, 0, 0, 0, 0, 0, problems.length];
@@ -96,17 +98,17 @@ function statsMaker(problems) {
         averageMem += parseFloat(problems[i].memory);
     }
     
-    // Inserting the mean runtime and memory usage through the document IDs. 
-    meanRun.textContent += (averageRun / totalProblemCnt).toFixed(2) + "%";
-    meanMem.textContent += (averageMem / totalProblemCnt).toFixed(2) + "%";
+    // Inserting the mean runtime and memory usage through the document IDs.
+    meanRunRef.textContent += (averageRun / totalProblemCnt).toFixed(2) + "%";
+    meanMemRef.textContent += (averageMem / totalProblemCnt).toFixed(2) + "%";
 
     for (let i = 0; i < 9; i++) statsInputRef[i].textContent = problemStatsCnts[i];
     return problemStatsCnts;
 }
 
 function pieChartSetUp(problemCnts) {
-    const pieRef = document.getElementById('pieChart');
-    const statsInputRef = document.getElementsByClassName('statsInput');
+    const pieRef = document.getElementById('pie-chart');
+    const statsInputRef = document.getElementsByClassName('stats-input');
     let easySection = (problemCnts[0] / problemCnts[8]) * 100, medSection = (problemCnts[1] / problemCnts[8]) * 100 + easySection;
 
     easySection = easySection.toFixed(0);
@@ -123,19 +125,19 @@ function pieChartSetUp(problemCnts) {
 }
 
 function buildProblemDivs() {
-    const containerRef = document.getElementById('solutionsContainer');
+    const containerRef = document.getElementById('solutions-container');
 
     for (let i = 0; i < 3; i++) {
         const solutions = document.createElement('div');
         solutions.setAttribute('class', 'solutions');
 
-        if (i == 1) solutions.innerHTML += `<div id="leftPageButtonBorder" style="visibility: hidden">
-                                                <button id="leftPageButton">&langle;&langle;</button>
+        if (i == 1) solutions.innerHTML += `<div id="left-page-button-border" style="visibility: hidden">
+                                                <button id="left-page-button">&langle;&langle;</button>
                                             </div>`;
         for (let j = 0; j < 5; j++) {
-            solutions.innerHTML = solutions.innerHTML + `<div class="problemDiv">
-                <p class="problemTitle">Problem: #<span class="number">N/A</span></p>
-                <hr class="problemBar">
+            solutions.innerHTML = solutions.innerHTML + `<div class="problem-div">
+                <p class="problem-title">Problem: #<span class="number">N/A</span></p>
+                <hr class="problem-bar">
                 <p class="type">N/A</p>
                 <p class="props">Date: <span class="date">MMM DD, YYYY</span></p>
                 <p class="props">Language: <span class="lang">N/A</span></p>
@@ -144,8 +146,8 @@ function buildProblemDivs() {
                 <p class="props">Received Help: <span class="help">N/A</span></p>
             </div>`
         }
-        if (i == 1) solutions.innerHTML += `<div id="rightPageButtonBorder">
-                                                <button id="rightPageButton">&rangle;&rangle;</button>
+        if (i == 1) solutions.innerHTML += `<div id="right-page-button-border">
+                                                <button id="right-page-button">&rangle;&rangle;</button>
                                             </div>`;
 
         containerRef.appendChild(solutions);
@@ -153,14 +155,14 @@ function buildProblemDivs() {
 }
 
 function hideProblemDivs() {
-    const problemDivs = document.getElementsByClassName('problemDiv');
+    const problemDivs = document.getElementsByClassName('problem-div');
     let len = problemDivs.length;
 
     for (let i = 1; i < len; i++) problemDivs[i].style.visibility = "hidden";
 }
 
 function problemPopulate(problems, searchProblem, pageNum) {
-    const problemDivs = document.getElementsByClassName('problemDiv');
+    const problemDivs = document.getElementsByClassName('problem-div');
     const problemNumber = document.getElementsByClassName('number');
     const problemType = document.getElementsByClassName('type');
     const problemDate = document.getElementsByClassName('date');
@@ -241,7 +243,7 @@ function gradeProblems() {
 }
 
 function pageTransfer() {
-    const problemDiv = document.getElementsByClassName('problemDiv');
+    const problemDiv = document.getElementsByClassName('problem-div');
     let cnt = problemDiv.length;
 
     for (let i = 0; i < cnt; i++) {
@@ -251,7 +253,7 @@ function pageTransfer() {
                 const numberRef = document.getElementsByClassName('number');
 
                 if (numberRef[i].textContent != "N/A") {
-                    localStorage.setItem("problemNum", parseInt(numberRef[i].textContent));
+                    localStorage.setItem("problem-num", parseInt(numberRef[i].textContent));
                     window.location='./problem.html';
                 } else {
                     alert('Please search a problem first.');
@@ -262,8 +264,8 @@ function pageTransfer() {
 }
 
 function searchCall(problems, pageNum) {
-    const searchRef = document.getElementById('submitButton');
-    const inputRef = document.getElementById('searchInput');
+    const searchRef = document.getElementById('search-button');
+    const inputRef = document.getElementById('search-input');
 
     searchRef.addEventListener('click', function () {
         let problemNum = inputRef.value;
@@ -271,8 +273,12 @@ function searchCall(problems, pageNum) {
         // If problem exists, set the search card to that problem idx.
         if (Util.problemSearch(problems, problemNum) != -1) {
             // Store the idx so we know which problem to display.
+            localStorage.setItem('problem-num', problemNum);
             problemPopulate(problems, problemNum, pageNum);
             gradeProblems();
+
+            // Bring the user to the top of the page to view the problem.
+            document.documentElement.scrollTop = 0;
         } else {
             alert("Sorry, but your requested search isn't in the database/incomplete. Try searching for another problem number.");
         }
@@ -284,10 +290,10 @@ function searchCall(problems, pageNum) {
 }
 
 function menuShift(problems, searchProblem, pageNum) {
-    const leftMenuButton = document.getElementById('leftPageButton');
-    const rightMenuButton = document.getElementById('rightPageButton');
-    const leftPageButtonBorderRef = document.getElementById('leftPageButtonBorder');
-    const rightPageButtonBorderRef = document.getElementById('rightPageButtonBorder');
+    const leftMenuButton = document.getElementById('left-page-button');
+    const rightMenuButton = document.getElementById('right-page-button');
+    const leftPageButtonBorderRef = document.getElementById('left-page-button-border');
+    const rightPageButtonBorderRef = document.getElementById('right-page-button-border');
 
     if (leftMenuButton != null) {
         leftMenuButton.addEventListener('click', function () {
