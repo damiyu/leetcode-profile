@@ -1,5 +1,5 @@
 # Darren's Leetcode Folder
-### [Link: My Profile Website](https://damiyu.github.io/leetcode-profile/src/pages/index.html)
+<a href="[placeholder.com](https://damiyu.github.io/leetcode-profile/src/pages/index.html)" target="_blank">My Profile Website</a>
 
 ## My File Style Guide:
 - HTML/CSS (ids/class): kebab-case
