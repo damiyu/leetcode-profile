@@ -382,20 +382,20 @@ input::-webkit-inner-spin-button {
 
 @font-face {
     font-family: Anton;
-    src: url(../fonts/Anton/Anton-Regular.ttf);
+    src: url(./fonts/Anton/Anton-Regular.ttf);
 }
 
 @font-face {
     font-family: BungeeShade;
-    src: url(../fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+    src: url(./fonts/Bungee_Shade/BungeeShade-Regular.ttf);
 }
 
 @font-face {
     font-family: Lobster;
-    src: url(../fonts/Lobster/Lobster-Regular.ttf);
+    src: url(./fonts/Lobster/Lobster-Regular.ttf);
 }
 
 @font-face {
     font-family: Pridi;
-    src: url(../fonts/Pridi/Pridi-ExtraLight.ttf);
+    src: url(./fonts/Pridi/Pridi-ExtraLight.ttf);
 }

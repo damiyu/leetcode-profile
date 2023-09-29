@@ -77,7 +77,7 @@ function buildContainer(bool) {
             <p class="props">Memory: <span id="memory">0.00</span></p>
             <p class="props">Received Help: <span id="help">Null</span></p>
         </div>
-        <img id="problem-image" src="../images/misc/blank.png" height="450px">`
+        <img id="problem-image" src="../media/images/misc/blank.png" height="450px">`
 
         document.getElementById('code-box').style.border = "2px solid navy";
     } else {
@@ -96,8 +96,8 @@ function displayImage(problem) {
     else if (problemDiff == "Medium") problemDiff = "med";
     else if (problemDiff == "Hard") problemDiff = "hard";
     
-    let path = "../images/" + problemDiff + "/" + problemDiff + problem.number + ".png", checkImg = new Image();
-    checkImg.onerror = function () {problemImageRef.src = "../images/misc/blank.png";}
+    let path = "../media/images/" + problemDiff + "/" + problemDiff + problem.number + ".png", checkImg = new Image();
+    checkImg.onerror = function () {problemImageRef.src = "../media/images/misc/blank.png";}
     checkImg.onload = function () {problemImageRef.src = path;}
     checkImg.src = path;
 }
@@ -149,10 +149,10 @@ async function fileTextDisplay(problem) {
     else if (problem.language == "Python3") lang = "py";
     else if (problem.language == "JavaScript") lang = "js";
 
-    let fileText = await fetch('../../solutions/' + diff + '/' + diff + problem.number + '/Solution.' + lang);
+    let fileText = await fetch('../../algorithms/' + diff + '/' + diff + problem.number + '/Solution.' + lang);
 
     // Some problems will have a different file name.
-    if (problem.number == 225) fileText = await fetch('../../solutions/' + diff + '/' + diff + problem.number + '/MyStack.java');
+    if (problem.number == 225) fileText = await fetch('../../algorithms/' + diff + '/' + diff + problem.number + '/MyStack.java');
 
     // Segement the text by line breaks.
     let lines = (await fileText.text()).split('\n');

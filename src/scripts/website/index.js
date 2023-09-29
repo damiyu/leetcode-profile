@@ -79,7 +79,7 @@ function statsMaker(problems) {
     const statsInputRef = document.getElementsByClassName('stats-input');
     const meanRunRef = document.getElementById('mean-runtime');
     const meanMemRef = document.getElementById('mean-memory');
-    const langList = ["Java", "C", "C++", "JavaScript", "Python3"];
+    const langList = ["Java", "C", "C++", "Python3", "JavaScript"];
     let totalProblemCnt = problems.length, averageRun = 0.0, averageMem = 0.0;
     let problemStatsCnts = [problems.length, 0, 0, 0, 0, 0, 0, 0, problems.length];
 
@@ -118,7 +118,7 @@ function pieChartSetUp(problemCnts) {
     statsInputRef[0].textContent += " (" + easySection + "%)";
     statsInputRef[1].textContent += " (" + (medSection - easySection) + "%)";
     statsInputRef[2].textContent += " (" + (100 - medSection) + "%)";
-    for (let  i = 3; i < 8; i++) statsInputRef[i].textContent += " (" + (problemCnts[i] / problemCnts[8] * 100).toFixed(0) + "%)";
+    for (let i = 3; i < 8; i++) statsInputRef[i].textContent += " (" + (problemCnts[i] / problemCnts[8] * 100).toFixed(0) + "%)";
 
     pieRef.style.backgroundImage = "conic-gradient(lime 0% " + easySection + "%, yellow " + easySection +
                                                         "% " + medSection + "%, crimson " + medSection + "% 100%)";
