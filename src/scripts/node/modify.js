@@ -1,21 +1,23 @@
-setup();
+build();
 
-function setup() {
+function build() {
+    // Get cmd line arguments and count them
     let argv = process.argv, argc = argv.length;
     var fs = require('fs');
     
-    if (argc == 10) {
-        if (!searchNumber(fs, argv[2], argv[3])) {
-            newEntry(fs, argv[2], argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9]);
-            orderEntries(fs, argv[2]);
+    // Only allow valid arguments
+    if (argc == 11 && argv[2] == "add") {
+        if (!searchNumber(fs, argv[3], argv[4])) {
+            // Log a new entry and reorder the database
+            newEntry(fs, argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10]);
+            orderEntries(fs, argv[3]);
         } else {
-            console.log("Duplicate problem found!");
+            console.log("Fail, duplicate problem found!");
         }
     } else if (argc == 4 && argv[2] == "sort") {
         orderEntries(fs, argv[3]);
     } else if (argc == 4 && argv[2] == "order") {
         let jsonFile = JSON.parse(fs.readFileSync(argv[3]));
-
         isAscending(jsonFile);
     } else {
         console.log("Invalid arguments, try again!");
@@ -118,8 +120,8 @@ function isAscending(jsonFile) {
     let len = jsonFile.length;
 
     for (let i = 0; i < len - 1; i++) {
-        if (parseInt(jsonFile[i + 1].number) < parseInt(jsonFile[i].number)) {
-            console.log("Not order");
+        if (parseInt(jsonFile[i + 1].number) <= parseInt(jsonFile[i].number)) {
+            console.log("Not order (num: " + jsonFile[i].number + "), at " + "idx: " + i + " and idx: " + (i + 1));
             return false;
         }
     }

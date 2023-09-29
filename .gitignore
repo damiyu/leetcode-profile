@@ -2,4 +2,4 @@
 *.class
 
 # Ignore the testing directory
-/playground
+/backend

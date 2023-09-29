@@ -207,6 +207,15 @@
 		"help": "No"
 	},
 	{
+		"number": "28",
+		"difficulty": "Easy",
+		"date": "Sep 26, 2023",
+		"language": "Python3",
+		"runtime": "97.42",
+		"memory": "98.12",
+		"help": "No"
+	},
+	{
 		"number": "33",
 		"difficulty": "Medium",
 		"date": "Aug 7, 2023",
@@ -396,6 +405,15 @@
 		"help": "No"
 	},
 	{
+		"number": "316",
+		"difficulty": "Medium",
+		"date": "Sep 26, 2023",
+		"language": "Java",
+		"runtime": "96.14",
+		"memory": "96.38",
+		"help": "Yes"
+	},
+	{
 		"number": "338",
 		"difficulty": "Easy",
 		"date": "Sep 1, 2023",
@@ -582,6 +600,24 @@
 		"language": "Java",
 		"runtime": "100.00",
 		"memory": "67.53",
+		"help": "No"
+	},
+	{
+		"number": "896",
+		"difficulty": "Easy",
+		"date": "Sep 28, 2023",
+		"language": "Python3",
+		"runtime": "94.27",
+		"memory": "95.58",
+		"help": "No"
+	},
+	{
+		"number": "905",
+		"difficulty": "Easy",
+		"date": "Sep 27, 2023",
+		"language": "Python3",
+		"runtime": "79.80",
+		"memory": "96.40",
 		"help": "No"
 	},
 	{
