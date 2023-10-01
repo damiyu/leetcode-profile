@@ -486,6 +486,24 @@
 		"help": "No"
 	},
 	{
+		"number": "447",
+		"difficulty": "Easy",
+		"date": "Oct 1, 2023",
+		"language": "Python3",
+		"runtime": "95.79",
+		"memory": "95.86",
+		"help": "No"
+	},
+	{
+		"number": "456",
+		"difficulty": "Medium",
+		"date": "Sep 30, 2023",
+		"language": "Python3",
+		"runtime": "97.08",
+		"memory": "99.51",
+		"help": "Yes"
+	},
+	{
 		"number": "459",
 		"difficulty": "Easy",
 		"date": "Sep 3, 2023",
