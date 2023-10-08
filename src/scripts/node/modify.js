@@ -1,27 +1,85 @@
 build();
 
 function build() {
-    // Get cmd line arguments and count them
+    // Get cmd line arguments and count them.
     let argv = process.argv, argc = argv.length;
     var fs = require('fs');
     
-    // Only allow valid arguments
+    // Only allow valid arguments.
     if (argc == 11 && argv[2] == "add") {
-        if (!searchNumber(fs, argv[3], argv[4])) {
-            // Log a new entry and reorder the database
-            newEntry(fs, argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10]);
-            orderEntries(fs, argv[3]);
-        } else {
-            console.log("Fail, duplicate problem found!");
+        if (entryChecker(argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10])) {
+            if (!searchNumber(fs, argv[3], argv[4])) {
+                // Log a new entry, reorder the database, and check if other components are in sync.
+                newEntry(fs, argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10]);
+                orderEntries(fs, argv[3]);
+                fileImageEntryCheck(fs, argv[3]);
+            } else {
+                console.log("Fail, duplicate problem number found!");
+            }
         }
     } else if (argc == 4 && argv[2] == "sort") {
         orderEntries(fs, argv[3]);
     } else if (argc == 4 && argv[2] == "order") {
         let jsonFile = JSON.parse(fs.readFileSync(argv[3]));
         isAscending(jsonFile);
+    } else if (argc = 4 && argv[2] == "exist") {
+        fileImageEntryCheck(fs, argv[3]);
     } else {
         console.log("Invalid arguments, try again!");
     }
+}
+
+function entryChecker(number, difficulty, language, date, runtime, memory, help) {
+    // Check if new entry is a valid problem number in the format X*, X[0] != '0'.
+    if (!/^[1-9]\d*/.test(number)) {
+        console.log("Fail, \'" + number + "\' is an invalid number argument on new entry!");
+        return false;
+    }
+
+    // Check if new entry has a valid difficulty.
+    if (difficulty != "Easy" && difficulty != "Medium" && difficulty != "Hard") {
+        console.log("Fail, \'" + difficulty + "\' is an invalid difficulty argument on new entry!");
+        return false;
+    }
+    
+    // Check if new entry has a valid language.
+    if (language != "Java" && language != "C" && language != "C++"
+        && language != "Python3" && language != "JavaScript") {
+        console.log("Fail, \'" + language + "\' is an invalid language argument on new entry!");
+        return false;
+    }
+    
+    // Check if new entry has a correct date format.
+    const validMon = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    let dateSplit = date.split(' ');
+    if (dateSplit.length != 3 || validMon.indexOf(dateSplit[0]) == -1 || parseInt(dateSplit[1]) < 1
+        || parseInt(dateSplit[1]) > 31 || dateSplit[1][dateSplit[1].length - 1] != ',') {
+        console.log("Fail, \'" + date + "\' is an invalid date argument on new entry!");
+        return false;
+    }
+
+    // Check of new entry has a runtime in the format XX.XX or XXX.XX, X[0] != '0'.
+    if (!/^[1-9]\d{1,2}\.\d{2}$/.test(runtime)) {
+        console.log("Fail, " + runtime + "\' is an invalid runtime argument on new entry!");
+        console.log("Runtime must follow the format XX.XX or XXX.XX! X[0] != \'0\'");
+        return false;
+    }
+
+    // Check of new entry has a memory in the format XX.XX or XXX.XX, X[0] != '0'.
+    if (!/^[1-9]\d{1,2}\.\d{2}$/.test(memory)) {
+        console.log("Fail, " + memory + "\' is an invalid memory argument on new entry!");
+        console.log("Memory must follow the format XX.XX or XXX.XX! X[0] != \'0\'");
+        return false;
+    }
+
+    // Check if new entry has a valid help argument.
+    if (help != "No" && help != "Yes") {
+        console.log("Fail, \'" + help + "\' is an invalid help argument on new entry!");
+        console.log("The only valid help values are \'No\' and \'Yes\'!");
+        return false;
+    }
+
+    return true;
 }
 
 function searchNumber(fs, filePath, number) {
@@ -94,7 +152,7 @@ function orderEntries(fs, filePath) {
     }
 
     if (isAscending(jsonFile)) {
-        console.log("Appended objest was successful!");
+        console.log("Appended object was successful!");
         fs.writeFileSync(filePath, JSON.stringify(jsonFile, null, '\t'));
     } else {
         console.log("Append fail, check 'function orderEntries()'!!!");
@@ -128,4 +186,26 @@ function isAscending(jsonFile) {
 
     console.log("In order");
     return true;
+}
+
+async function fileImageEntryCheck(fs, filePath) {
+    let jsonFile = JSON.parse(fs.readFileSync(filePath));
+    let cnt = jsonFile.length;
+
+    for (let i = 0 ; i < cnt; i++) {
+        let num = jsonFile[i].number;
+        let diff = jsonFile[i].difficulty;
+
+        if (diff == "Easy") diff = "easy";
+        else if (diff == "Medium") diff = "med";
+        else diff = "hard";
+
+        // Checks if problem directories exist and if their images are in media.
+        if (!fs.existsSync('../../../algorithms/' + diff + "/" + diff + num)) {
+            console.log("The programming files for problem #" + num + " doesn't exists!");
+        }
+        if (!fs.existsSync('../../media/images/' + diff + "/" + diff + num + ".png")) {
+            console.log("The images for problem #" + num + " doesn't exist!");
+        }
+    }
 }

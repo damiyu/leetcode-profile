@@ -8,6 +8,7 @@ async function init() {
 
     homePage();
     copyGmail();
+    searchRecommend(problems);
     searchCall(problems);
 
     // Stops problem display if problem can't be found.
@@ -41,11 +42,23 @@ function copyGmail() {
     });
 }
 
+function searchRecommend(problems) {
+    const problemNumsRef = document.getElementById('problem-numbers');
+    let cnt = problems.length;
+
+    // Add all problem numbers to datalist and let each input autocomplete.
+    for (let i = 0; i < cnt; i++) {
+        let newOption = document.createElement('option');
+        newOption.textContent = problems[i].number;
+        problemNumsRef.appendChild(newOption);
+    }
+}
+
 function searchCall(problems) {
     const searchRef = document.getElementById('search-button');
     const inputRef = document.getElementById('search-input');
 
-    searchRef.addEventListener('click', function () {
+    searchRef.addEventListener('click', function() {
         let problemNum = inputRef.value;
 
         // If problem exists, set the search card to that problem idx.
@@ -79,7 +92,7 @@ function buildContainer(bool) {
         </div>
         <img id="problem-image" src="../media/images/misc/blank.png" height="450px">`
 
-        document.getElementById('code-box').style.border = "2px solid navy";
+        document.getElementById('code-box').style.border = "4px inset brown";
     } else {
         problemContainerRef.innerHTML = `<p id="problem-null">Please return to the home page and select a problem or search a problem!</p>`
         document.getElementById('problem-null').addEventListener('click', function() {
@@ -97,8 +110,8 @@ function displayImage(problem) {
     else if (problemDiff == "Hard") problemDiff = "hard";
     
     let path = "../media/images/" + problemDiff + "/" + problemDiff + problem.number + ".png", checkImg = new Image();
-    checkImg.onerror = function () {problemImageRef.src = "../media/images/misc/blank.png";}
-    checkImg.onload = function () {problemImageRef.src = path;}
+    checkImg.onerror = function() {problemImageRef.src = "../media/images/misc/blank.png";}
+    checkImg.onload = function() {problemImageRef.src = path;}
     checkImg.src = path;
 }
 
@@ -153,6 +166,7 @@ async function fileTextDisplay(problem) {
 
     // Some problems will have a different file name.
     if (problem.number == 225) fileText = await fetch('../../algorithms/' + diff + '/' + diff + problem.number + '/MyStack.java');
+    if (problem.number == 706) fileText = await fetch('../../algorithms/' + diff + '/' + diff + problem.number + '/MyHashMap.py');
 
     // Segement the text by line breaks.
     let lines = (await fileText.text()).split('\n');

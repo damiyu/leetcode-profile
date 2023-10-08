@@ -1,5 +1,6 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
@@ -7,7 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    background-color: plum;
+    background-image: radial-gradient(circle, skyblue, violet 5%, aquamarine, rgb(0, 0, 55, 80%));
     background-attachment: fixed;
 }
 
@@ -25,8 +26,8 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1vw;
-    margin: 2vh;
+    margin: 10px;
+    gap: 15px;
 }
 
 .problem-div {
@@ -87,6 +88,20 @@ footer {
     margin-bottom: -10px;
 }
 
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 225px;
+    border: 4px double darkcyan;
+
+    font-size: 20px;
+    color: darkred;
+    background-color: wheat;
+}
+
 .date,
 .lang,
 .time,
@@ -123,9 +138,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1vw;
     height: 10vh;
     width: 25vw;
+    margin-left: 1vw;
 
     border: 0.5vh solid blue;
     border-radius: 1vh;
@@ -142,8 +157,8 @@ footer {
 }
 
 #links-text {
-    margin-left: 1vw;
     width: 40vw;
+    margin-left: 1vw;
 
     font-size: 1.5vw;
     font-weight: bold;
@@ -170,9 +185,9 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 3vw;
     height: 8vh;
     width: 20vw;
+    margin-left: 3vw;
 
     border: 0.5vh solid blue;
     border-radius: 10vh;
@@ -180,9 +195,9 @@ footer {
 }
 
 #search-icon {
-    margin-left: 0.5vw;
     height: 4vh;
     width: 2vw;
+    margin-left: 0.5vw;
 }
 
 #search-input {
@@ -316,11 +331,70 @@ footer {
     background-color: bisque;
 }
 
+#problem-div-search {
+    animation: border-flash 1s infinite;
+}
+
+#problem-div-search:hover {
+    animation: none;
+}
+
+#solutions-container-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #solutions-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 1200px;
+    width: 1450px;
+    border: 8px inset purple;
+    border-radius: 25px;
+    background-color: rgb(120, 120, 120, 80%);
+}
+
+#filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#difficulty-filter,
+#language-filter,
+#percentile-filter,
+#solution-filter,
+#filter-button {
+    font-size: 16px;
+    border: 2.5px solid gray;
+    border-radius: 10px;
+    outline: none;
+    color: lightyellow;
+    background-color: darkred;
+}
+
+#filter-button {
+    font-family: "Times New Roman";
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: steelblue;
+}
+
+#filter-button:active {
+    background-color: navy;
+}
+
+#difficulty-filter:focus,
+#language-filter:focus,
+#percentile-filter:focus,
+#solution-filter:focus {
+    border-color: navy;
 }
 
 #left-page-button-border, #right-page-button-border {
@@ -353,17 +427,32 @@ footer {
     background-color: bisque;
 }
 
+#problem-count-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 185px;
+    margin-top: 10px;
+    border: 4px groove navy;
+
+    font-family: Pridi;
+    font-size: 18px;
+    background-color: lightsteelblue;
+}
+
 #copy-right {
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
 
+    height: 8vh;
     margin-top: 1vh;
     margin-left: 1vw;
     margin-right: 1vw;
     margin-bottom: 1vh;
-    height: 8vh;
     border-radius: 1vh;
     background-color: gray;
 }
@@ -378,6 +467,10 @@ footer {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 0;
 }
 
 @font-face {
@@ -398,4 +491,9 @@ input::-webkit-inner-spin-button {
 @font-face {
     font-family: Pridi;
     src: url(./fonts/Pridi/Pridi-ExtraLight.ttf);
+}
+
+@keyframes border-flash {
+    35% {border-color: purple;}
+    50% {border-color: aqua;}
 }

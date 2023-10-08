@@ -378,6 +378,15 @@
 		"help": "No"
 	},
 	{
+		"number": "229",
+		"difficulty": "Medium",
+		"date": "Oct 5, 2023",
+		"language": "Python3",
+		"runtime": "90.18",
+		"memory": "97.49",
+		"help": "No"
+	},
+	{
 		"number": "234",
 		"difficulty": "Easy",
 		"date": "Jul 26, 2023",
@@ -420,6 +429,15 @@
 		"language": "Java",
 		"runtime": "99.54",
 		"memory": "92.70",
+		"help": "No"
+	},
+	{
+		"number": "343",
+		"difficulty": "Medium",
+		"date": "Oct 6, 2023",
+		"language": "Python3",
+		"runtime": "99.82",
+		"memory": "84.94",
 		"help": "No"
 	},
 	{
@@ -486,15 +504,6 @@
 		"help": "No"
 	},
 	{
-		"number": "447",
-		"difficulty": "Easy",
-		"date": "Oct 1, 2023",
-		"language": "Python3",
-		"runtime": "95.79",
-		"memory": "95.86",
-		"help": "No"
-	},
-	{
 		"number": "456",
 		"difficulty": "Medium",
 		"date": "Sep 30, 2023",
@@ -540,6 +549,15 @@
 		"help": "No"
 	},
 	{
+		"number": "557",
+		"difficulty": "Easy",
+		"date": "Oct 1, 2023",
+		"language": "Python3",
+		"runtime": "95.79",
+		"memory": "95.86",
+		"help": "No"
+	},
+	{
 		"number": "646",
 		"difficulty": "Medium",
 		"date": "Aug 26, 2023",
@@ -556,6 +574,15 @@
 		"runtime": "54.18",
 		"memory": "90.60",
 		"help": "Yes"
+	},
+	{
+		"number": "706",
+		"difficulty": "Easy",
+		"date": "Oct 3, 2023",
+		"language": "Python3",
+		"runtime": "99.54",
+		"memory": "90.40",
+		"help": "No"
 	},
 	{
 		"number": "712",
@@ -675,6 +702,24 @@
 		"help": "No"
 	},
 	{
+		"number": "1420",
+		"difficulty": "Hard",
+		"date": "Oct 7, 2023",
+		"language": "Python3",
+		"runtime": "92.38",
+		"memory": "98.10",
+		"help": "Yes"
+	},
+	{
+		"number": "1512",
+		"difficulty": "Easy",
+		"date": "Oct 2, 2023",
+		"language": "Python3",
+		"runtime": "96.55",
+		"memory": "97.25",
+		"help": "No"
+	},
+	{
 		"number": "1584",
 		"difficulty": "Medium",
 		"date": "Sep 15, 2023",
@@ -717,6 +762,15 @@
 		"language": "Java",
 		"runtime": "67.10",
 		"memory": "73.69",
+		"help": "No"
+	},
+	{
+		"number": "2038",
+		"difficulty": "Medium",
+		"date": "Oct 2, 2023",
+		"language": "Python3",
+		"runtime": "88.53",
+		"memory": "94.02",
 		"help": "No"
 	},
 	{

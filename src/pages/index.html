@@ -19,7 +19,8 @@
 
             <div id="search-div">
                 <img id="search-icon" src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="Another">
-                <input id="search-input" type="number" placeholder="Search ..." autocomplete="off">
+                <datalist id="problem-numbers"></datalist>
+                <input id="search-input" type="number" list="problem-numbers" placeholder="Search ..." autocomplete="off">
             </div>
             <input type="submit" id="search-button">
         </div>
@@ -71,7 +72,63 @@
             </div>
         </div>
         
-        <div id="solutions-container"><!--Problem Divs go here with script--></div>
+        <div id="solutions-container-border">
+            <div id="solutions-container">
+                <div id="filter-container">
+                    <div class="filter">
+                        <label for="difficulty-filter">Difficulty:&nbsp;</label>
+                        <select id="difficulty-filter">
+                            <option value="All">All</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </div>
+
+                    <div class="filter">
+                        <label for="language-filter">Language:&nbsp;</label>
+                        <select id="language-filter">
+                            <option value="All">All</option>
+                            <option value="Java">Java</option>
+                            <option value="C">C</option>
+                            <option value="C++">C++</option>
+                            <option value="Python3">Python3</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </select>
+                    </div>
+
+                    <div class="filter">
+                        <label for="percentile-filter">Quality:&nbsp;</label>
+                        <select id="percentile-filter">
+                            <option value="All">All</option>
+                            <option value="Good">&ge;180%</option>
+                            <option value="Neutral">&asymp;160%</option>
+                            <option value="Bad">&le;100%</option>
+                        </select>
+                    </div>
+
+                    <div class="filter">
+                        <label for="solution-filter">Solution:&nbsp;</label>
+                        <select id="solution-filter">
+                            <option value="All">All</option>
+                            <option value="Yes">Assisted</option>
+                            <option value="No">Independent</option>
+                        </select>
+                    </div>
+
+                    <div class="filter">
+                        <button id="filter-button">Apply Filter</button>
+                    </div>
+                </div>
+
+                <div id="problem-count-container">
+                    <div id="problem-count">(Found <span id="total-problem-count"></span> Problems)</div>
+                    <div id="page-number">Page <span id="current-page-number"></span> of <span id="total-page-number"></span></div>
+                </div>
+
+                <!--Problem Divs go here with script-->
+            </div>
+        </div>
 
         <footer>
             <div id="copy-right"><p id="copy-text">&copy; 2023 Darren Yu | Developer/Designer: Darren Yu | Server Host: Github</p></div>
