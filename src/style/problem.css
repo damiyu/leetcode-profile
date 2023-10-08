@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
@@ -24,9 +25,10 @@ footer {
     width: 1200px;
     margin-bottom: -10px;
 
-    font-family: Anton;
+    font-family: Cascadia Code;
     font-size: 14px;
-    color: navy;
+    user-select: text;
+    color: whitesmoke;
 }
 
 #tool-bar-div {
@@ -266,8 +268,7 @@ footer {
     width: 1250px;
     margin: 10px;
     border-radius: 25px;
-
-    background-image: linear-gradient(135deg, bisque, violet, aquamarine);
+    background-color: darkslategray;
 }
 
 #copy-right {
@@ -295,6 +296,10 @@ footer {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 0;
 }
 
 @font-face {

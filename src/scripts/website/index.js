@@ -20,14 +20,16 @@ async function init() {
     const problemCnts = statsMaker(problems);
     pieChartSetUp(problemCnts);
 
-    let pageNum = [1];
+    let pageNum = [1], filter = ["All", "All", "All", "All"];
     buildProblemDivs();
     hideProblemDivs();
-    problemPopulate(problems, searchProblem, pageNum[0]);
+    problemPopulate(problems, problems, searchProblem, pageNum[0]);
     gradeProblems();
     pageTransfer();
+    searchRecommend(problems);
     searchCall(problems, pageNum);
-    menuShift(problems, searchProblem, pageNum);
+    menuShift(problems, filter, searchProblem, pageNum);
+    filterSearch(problems, filter, searchProblem, pageNum);
 }
 
 function gradientBackgrounds(n) {
@@ -161,7 +163,7 @@ function hideProblemDivs() {
     for (let i = 1; i < len; i++) problemDivs[i].style.visibility = "hidden";
 }
 
-function problemPopulate(problems, searchProblem, pageNum) {
+function problemPopulate(problems, appliedFilter, searchProblem, pageNum) {
     const problemDivs = document.getElementsByClassName('problem-div');
     const problemNumber = document.getElementsByClassName('number');
     const problemType = document.getElementsByClassName('type');
@@ -170,7 +172,7 @@ function problemPopulate(problems, searchProblem, pageNum) {
     const problemTime = document.getElementsByClassName('time');
     const problemMem = document.getElementsByClassName('memory');
     const problemHelp = document.getElementsByClassName('help');
-    let problemCnt = problems.length, problemIdx = 15 * pageNum - 15, searchIdx = Util.problemSearch(problems, searchProblem);
+    let problemCnt = appliedFilter.length, problemIdx = 15 * pageNum - 15, searchIdx = Util.problemSearch(problems, searchProblem);
 
     // First problem card is the previously searched problem or the default problem.
     if (searchIdx != -1) {
@@ -191,16 +193,21 @@ function problemPopulate(problems, searchProblem, pageNum) {
         problemHelp[0].textContent = "N/A";
     }
 
+    // Display the page number and problem count.
+    document.getElementById('total-problem-count').textContent = problemCnt;
+    document.getElementById('current-page-number').textContent = problemCnt > 0 ? pageNum : 0;
+    document.getElementById('total-page-number').textContent = Math.ceil(problemCnt / 15);
+
     // Skip the first problem card because of the search card.
     for (let i = 1; i < 16 && problemIdx < problemCnt; i++) {
         problemDivs[i].style.visibility = "visible";
-        problemNumber[i].textContent = problems[problemIdx].number;
-        problemType[i].textContent = problems[problemIdx].difficulty;
-        problemDate[i].textContent = problems[problemIdx].date;
-        problemLang[i].textContent = problems[problemIdx].language;
-        problemTime[i].textContent = problems[problemIdx].runtime;
-        problemMem[i].textContent = problems[problemIdx].memory;
-        problemHelp[i].textContent = problems[problemIdx++].help;
+        problemNumber[i].textContent = appliedFilter[problemIdx].number;
+        problemType[i].textContent = appliedFilter[problemIdx].difficulty;
+        problemDate[i].textContent = appliedFilter[problemIdx].date;
+        problemLang[i].textContent = appliedFilter[problemIdx].language;
+        problemTime[i].textContent = appliedFilter[problemIdx].runtime;
+        problemMem[i].textContent = appliedFilter[problemIdx].memory;
+        problemHelp[i].textContent = appliedFilter[problemIdx++].help;
     }
 }
 
@@ -263,22 +270,36 @@ function pageTransfer() {
     }
 }
 
+function searchRecommend(problems) {
+    const problemNumsRef = document.getElementById('problem-numbers');
+    let cnt = problems.length;
+
+    // Add all problem numbers to datalist and let each input autocomplete.
+    for (let i = 0; i < cnt; i++) {
+        let newOption = document.createElement('option');
+        newOption.textContent = problems[i].number;
+        problemNumsRef.appendChild(newOption);
+    }
+}
+
 function searchCall(problems, pageNum) {
     const searchRef = document.getElementById('search-button');
     const inputRef = document.getElementById('search-input');
 
-    searchRef.addEventListener('click', function () {
+    searchRef.addEventListener('click', function() {
         let problemNum = inputRef.value;
 
         // If problem exists, set the search card to that problem idx.
         if (Util.problemSearch(problems, problemNum) != -1) {
             // Store the idx so we know which problem to display.
             localStorage.setItem('problem-num', problemNum);
-            problemPopulate(problems, problemNum, pageNum);
+            problemPopulate(problems, problems, problemNum, pageNum);
             gradeProblems();
 
             // Bring the user to the top of the page to view the problem.
             document.documentElement.scrollTop = 0;
+
+            document.getElementsByClassName('problem-div')[0].setAttribute('id', 'problem-div-search');
         } else {
             alert("Sorry, but your requested search isn't in the database/incomplete. Try searching for another problem number.");
         }
@@ -289,14 +310,14 @@ function searchCall(problems, pageNum) {
     });
 }
 
-function menuShift(problems, searchProblem, pageNum) {
+function menuShift(problems, filter, searchProblem, pageNum) {
     const leftMenuButton = document.getElementById('left-page-button');
     const rightMenuButton = document.getElementById('right-page-button');
     const leftPageButtonBorderRef = document.getElementById('left-page-button-border');
     const rightPageButtonBorderRef = document.getElementById('right-page-button-border');
 
     if (leftMenuButton != null) {
-        leftMenuButton.addEventListener('click', function () {
+        leftMenuButton.addEventListener('click', function() {
             if (pageNum[0] > 1) {
                 // Make right menu button visible and hide left menu button when on first page.
                 rightPageButtonBorderRef.style.visibility = "visible";
@@ -304,26 +325,72 @@ function menuShift(problems, searchProblem, pageNum) {
 
                 // Repopulate the problem cards with the previous problems.
                 hideProblemDivs();
-                problemPopulate(problems, searchProblem, pageNum);
+                problemPopulate(problems, filterProblems(problems, filter), searchProblem, pageNum);
                 gradeProblems();
-            } else {
-                leftPageButtonBorderRef.style.visibility = "hidden";
             }
         });
     }
 
     if (rightMenuButton != null) {
-        rightMenuButton.addEventListener('click', function () {
-            if (pageNum[0] < problems.length / 15) {
+        rightMenuButton.addEventListener('click', function() {
+            let appliedFilter = filterProblems(problems, filter);
+
+            if (pageNum[0] < appliedFilter.length / 15) {
                 // Make left menu button visible and hide right menu button when on last page.
                 leftPageButtonBorderRef.style.visibility = "visible";
-                if (++pageNum[0] == Math.ceil(problems.length / 15)) rightPageButtonBorderRef.style.visibility = "hidden";
+                if (++pageNum[0] == Math.ceil(appliedFilter.length / 15)) rightPageButtonBorderRef.style.visibility = "hidden";
 
                 // Repopulate the problem cards with the next problems.
                 hideProblemDivs();
-                problemPopulate(problems, searchProblem, pageNum);
+                problemPopulate(problems, appliedFilter, searchProblem, pageNum);
                 gradeProblems();
             }
         });
     }
+}
+
+function filterSearch(problems, filter, searchProblem, pageNum) {
+    const difficultyFilterRef = document.getElementById('difficulty-filter');
+    const languageFilterRef = document.getElementById('language-filter');
+    const percentileFilterRef = document.getElementById('percentile-filter');
+    const solutionFilterRef = document.getElementById('solution-filter');
+    const filterButtonRef = document.getElementById('filter-button');
+
+    filterButtonRef.addEventListener('click', function() {        
+        filter[0] = difficultyFilterRef.value;
+        filter[1] = languageFilterRef.value;
+        filter[2] = percentileFilterRef.value
+        filter[3] = solutionFilterRef.value;
+
+        let appliedFilter = filterProblems(problems, filter);
+        pageNum[0] = 1;
+        hideProblemDivs();
+        problemPopulate(problems, appliedFilter, searchProblem, pageNum);
+        gradeProblems();
+
+        document.getElementById('left-page-button-border').style.visibility = "hidden";
+        if (appliedFilter.length <= 15) document.getElementById('right-page-button-border').style.visibility = "hidden";
+        else document.getElementById('right-page-button-border').style.visibility = "visible";
+    });
+}
+
+function filterProblems(problems, filter) {
+    let appliedFilter = [], sortIdx = 0, len = problems.length;
+
+    for (let i = 0; i < len; i++) {
+        if (filter[0] != "All" && problems[i].difficulty != filter[0]) continue;
+        if (filter[1] != "All" && problems[i].language != filter[1]) continue;
+        if (filter[2] != "All") {
+            let percentile = parseFloat(problems[i].runtime) + parseFloat(problems[i].memory);
+
+            if (filter[2] == "Good" && percentile < 180) continue;
+            else if (filter[2] == "Neutral" && (percentile <= 100 || percentile >= 180)) continue;
+            else if (filter[2] == "Bad" && percentile >= 100) continue;
+        }
+        if (filter[3] != "All" && problems[i].help != filter[3]) continue;
+
+        appliedFilter[sortIdx++] = problems[i];
+    }
+
+    return appliedFilter;
 }
