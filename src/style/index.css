@@ -40,8 +40,7 @@ footer {
     border: 4px solid blue;
     border-radius: 25px;
 
-    font-family: Anton;
-    font-size: 18px;
+    font: 18px "Anton";
     text-align: center;
     word-wrap: break-word;
     background-color: gold;
@@ -53,19 +52,17 @@ footer {
 }
 
 .problem-title {
-    width: 180px;
+    width: 200px;
     margin-top: -4px;
     border: 6px double blue;
     border-radius: 10px;
 
-    font-family: Lobster;
-    font-size: 28px;
-    font-weight: bold;
+    font: bold 28px "Lobster";
     color: brown;
 }
 
 .problem-bar {
-    width: 180px;
+    width: 200px;
     margin-top: -18px;
     margin-bottom: -10px;
     border: 5px double;
@@ -78,9 +75,7 @@ footer {
     border-radius: 30px;
     background-image: radial-gradient(black 30%, white);
 
-    font-family: BungeeShade;
-    font-size: 20px;
-    font-weight: bold;
+    font: bold 20px "Bungee Shade";
     color: white;
 }
 
@@ -128,6 +123,7 @@ footer {
     position: fixed;
     height: 15vh;
     width: 100vw;
+    z-index: 1;
     top: 0px;
     left: 0px;
 
@@ -149,9 +145,7 @@ footer {
 
 #title-text {
     width: 25vw;
-    font-family: Lobster;
-    font-size: 2.5vw;
-    font-weight: bold;
+    font: bold 2.5vw "Lobster";
     text-align: center;
     color: brown;
 }
@@ -208,8 +202,7 @@ footer {
     border: none;
     outline: none;
 
-    font-family: Anton;
-    font-size: 1.5vw;
+    font: 1.5vw "Anton";
     color: gray;
     background-color: rgb(0, 0, 0, 0%);
 }
@@ -222,9 +215,7 @@ footer {
     border: 0.5vh solid blue;
     border-radius: 1vh;
 
-    font-family: Lobster;
-    font-size: 1.5vw;
-    font-weight: bold;
+    font: bold 1.5vw "Lobster";
     color: brown;
     background-color: gold;
 }
@@ -258,8 +249,7 @@ footer {
 #prev-search-text {
     margin-bottom: 2px;
 
-    font-family: Pridi;
-    font-size: 24px;
+    font: 24px "Pridi";
     text-align: center;
     color: navy;
 }
@@ -285,8 +275,7 @@ footer {
     border-radius: 20px;
     background-color: wheat;
 
-    font-family: Lobster;
-    font-size: 18px;
+    font: 18px "Lobster";
     text-align: center;
     color: navy;
 }
@@ -297,17 +286,14 @@ footer {
     border: 2px solid black;
     border-radius: 10px;
 
-    font-family: Anton;
-    font-size: 24px;
+    font: 24px "Anton";
     color: brown;
 }
 
 #mean-runtime,
 #mean-memory {
     margin-top: -10px;
-
-    font-family: Anton;
-    font-size: 18px;
+    font: 18px "Anton";
 }
 
 #pie-chart-border {
@@ -317,7 +303,6 @@ footer {
     justify-content: center;
     height: 325px;
     width: 325px;
-    z-index: -1;
     border: 2px solid black;
     border-radius: 50%;
     background-image: linear-gradient(45deg, navy 0% 22.5%, gold 22.5% 37.5%, navy 37.5% 62.5%, gold 62.5% 77.5%, navy 77.5% 100%);
@@ -371,10 +356,12 @@ footer {
 #percentile-filter,
 #solution-filter,
 #filter-button {
-    font-size: 16px;
     border: 2.5px solid gray;
     border-radius: 10px;
     outline: none;
+    cursor: pointer;
+
+    font-size: 16px;
     color: lightyellow;
     background-color: darkred;
 }
@@ -383,17 +370,18 @@ footer {
     font-family: "Times New Roman";
     font-weight: bold;
     color: whitesmoke;
-    background-color: steelblue;
+    background-color: darkred;
 }
 
-#filter-button:active {
-    background-color: navy;
+#filter-button:hover {
+    background-color: darkgreen;
 }
 
 #difficulty-filter:focus,
 #language-filter:focus,
 #percentile-filter:focus,
-#solution-filter:focus {
+#solution-filter:focus,
+#filter-button:active {
     border-color: navy;
 }
 
@@ -415,8 +403,7 @@ footer {
     border: none;
     border-radius: 17.5px;
 
-    font-family: Anton;
-    font-size: 28px;
+    font: 28px "Anton";
     color: blue;
     background-color: gold;
 }
@@ -437,16 +424,15 @@ footer {
     margin-top: 10px;
     border: 4px groove navy;
 
-    font-family: Pridi;
-    font-size: 18px;
+    font: 18px "Pridi";
     background-color: lightsteelblue;
 }
 
 #copy-right {
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
 
     height: 8vh;
     margin-top: 1vh;
@@ -474,22 +460,22 @@ input::-webkit-calendar-picker-indicator {
 }
 
 @font-face {
-    font-family: Anton;
+    font-family: "Anton";
     src: url(./fonts/Anton/Anton-Regular.ttf);
 }
 
 @font-face {
-    font-family: BungeeShade;
+    font-family: "Bungee Shade";
     src: url(./fonts/Bungee_Shade/BungeeShade-Regular.ttf);
 }
 
 @font-face {
-    font-family: Lobster;
+    font-family: "Lobster";
     src: url(./fonts/Lobster/Lobster-Regular.ttf);
 }
 
 @font-face {
-    font-family: Pridi;
+    font-family: "Pridi";
     src: url(./fonts/Pridi/Pridi-ExtraLight.ttf);
 }
 

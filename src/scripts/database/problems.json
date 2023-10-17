@@ -225,6 +225,15 @@
 		"help": "No"
 	},
 	{
+		"number": "34",
+		"difficulty": "Medium",
+		"date": "Oct 8, 2023",
+		"language": "Python3",
+		"runtime": "88.27",
+		"memory": "84.76",
+		"help": "No"
+	},
+	{
 		"number": "35",
 		"difficulty": "Easy",
 		"date": "Sep 23, 2023",
@@ -312,6 +321,15 @@
 		"language": "Java",
 		"runtime": "100.00",
 		"memory": "84.89",
+		"help": "No"
+	},
+	{
+		"number": "119",
+		"difficulty": "Easy",
+		"date": "Oct 15, 2023",
+		"language": "Python3",
+		"runtime": "88.11",
+		"memory": "53.14",
 		"help": "No"
 	},
 	{
@@ -612,6 +630,15 @@
 		"help": "No"
 	},
 	{
+		"number": "746",
+		"difficulty": "Easy",
+		"date": "Oct 13, 2023",
+		"language": "Python3",
+		"runtime": "75.63",
+		"memory": "78.02",
+		"help": "Yes"
+	},
+	{
 		"number": "767",
 		"difficulty": "Medium",
 		"date": "Aug 23, 2023",
@@ -666,12 +693,30 @@
 		"help": "No"
 	},
 	{
+		"number": "1095",
+		"difficulty": "Hard",
+		"date": "Oct 11, 2023",
+		"language": "Python3",
+		"runtime": "96.74",
+		"memory": "90.39",
+		"help": "No"
+	},
+	{
 		"number": "1218",
 		"difficulty": "Medium",
 		"date": "Sep 4, 2023",
 		"language": "Java",
 		"runtime": "5.20",
 		"memory": "99.93",
+		"help": "No"
+	},
+	{
+		"number": "1269",
+		"difficulty": "Hard",
+		"date": "Oct 15, 2023",
+		"language": "Python3",
+		"runtime": "87.15",
+		"memory": "92.18",
 		"help": "No"
 	},
 	{
@@ -702,12 +747,30 @@
 		"help": "No"
 	},
 	{
+		"number": "1361",
+		"difficulty": "Medium",
+		"date": "Oct 16, 2023",
+		"language": "Python3",
+		"runtime": "60.78",
+		"memory": "91.62",
+		"help": "No"
+	},
+	{
 		"number": "1420",
 		"difficulty": "Hard",
 		"date": "Oct 7, 2023",
 		"language": "Python3",
 		"runtime": "92.38",
 		"memory": "98.10",
+		"help": "Yes"
+	},
+	{
+		"number": "1458",
+		"difficulty": "Hard",
+		"date": "Oct 8, 2023",
+		"language": "Python3",
+		"runtime": "97.93",
+		"memory": "97.24",
 		"help": "Yes"
 	},
 	{
@@ -765,6 +828,15 @@
 		"help": "No"
 	},
 	{
+		"number": "2009",
+		"difficulty": "Hard",
+		"date": "Oct 10, 2023",
+		"language": "Python3",
+		"runtime": "5.19",
+		"memory": "85.19",
+		"help": "No"
+	},
+	{
 		"number": "2038",
 		"difficulty": "Medium",
 		"date": "Oct 2, 2023",
@@ -780,6 +852,15 @@
 		"language": "Java",
 		"runtime": "97.00",
 		"memory": "76.64",
+		"help": "Yes"
+	},
+	{
+		"number": "2251",
+		"difficulty": "Hard",
+		"date": "Oct 11, 2023",
+		"language": "Python3",
+		"runtime": "88.66",
+		"memory": "97.31",
 		"help": "Yes"
 	},
 	{
@@ -825,6 +906,15 @@
 		"language": "Java",
 		"runtime": "80.70",
 		"memory": "96.21",
+		"help": "Yes"
+	},
+	{
+		"number": "2742",
+		"difficulty": "Hard",
+		"date": "Oct 14, 2023",
+		"language": "Python3",
+		"runtime": "99.62",
+		"memory": "72.24",
 		"help": "Yes"
 	}
 ]
