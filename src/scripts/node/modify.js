@@ -59,14 +59,14 @@ function entryChecker(number, difficulty, language, date, runtime, memory, help)
     }
 
     // Check of new entry has a runtime in the format XX.XX or XXX.XX, X[0] != '0'.
-    if (!/^[1-9]\d{1,2}\.\d{2}$/.test(runtime)) {
+    if (!/^[1-9]\d{0,2}\.\d{2}$/.test(runtime)) {
         console.log("Fail, " + runtime + "\' is an invalid runtime argument on new entry!");
         console.log("Runtime must follow the format XX.XX or XXX.XX! X[0] != \'0\'");
         return false;
     }
 
     // Check of new entry has a memory in the format XX.XX or XXX.XX, X[0] != '0'.
-    if (!/^[1-9]\d{1,2}\.\d{2}$/.test(memory)) {
+    if (!/^[1-9]\d{0,2}\.\d{2}$/.test(memory)) {
         console.log("Fail, " + memory + "\' is an invalid memory argument on new entry!");
         console.log("Memory must follow the format XX.XX or XXX.XX! X[0] != \'0\'");
         return false;
