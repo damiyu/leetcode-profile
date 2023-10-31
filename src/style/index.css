@@ -12,13 +12,32 @@ body {
     background-attachment: fixed;
 }
 
+table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 2px solid deepskyblue;
+}
+
+th {
+    border: 1px solid deepskyblue;
+    background-color: rgb(50, 50, 50);
+}
+
+td {
+    border: 1px solid deepskyblue;
+    background-color: gray;
+}
+
 footer {
     margin-top: auto;
 }
 
-.stats {
-    margin-top: -10px;
-    color: deepskyblue;
+.stats-input {
+    font: bold 10px "Pridi";
+    color: lightgoldenrodyellow;
 }
 
 .solutions {
@@ -143,6 +162,11 @@ footer {
     background-color: gold;
 }
 
+#title-div:hover {
+    cursor: pointer;
+    border-color: red;
+}
+
 #title-text {
     width: 25vw;
     font: bold 2.5vw "Lobster";
@@ -233,6 +257,7 @@ footer {
     margin-top: 20vh;
     margin-bottom: 5vh;
     gap: 5vw;
+    animation: loading 1s 1;
 }
 
 #problem-stat-container,
@@ -282,7 +307,7 @@ footer {
 
 #problem-stat-title {
     width: 260px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border: 2px solid black;
     border-radius: 10px;
 
@@ -290,10 +315,41 @@ footer {
     color: brown;
 }
 
+#stat-easy,
+#stat-medium,
+#stat-hard,
+#stat-total {
+    font: bold 15px "Bungee Shade";
+}
+
+#stat-easy {
+    color: lime;
+}
+
+#stat-medium {
+    color: gold;
+}
+
+#stat-hard {
+    color: crimson;
+}
+
+#stat-total {
+    color: plum;
+}
+
+#row-language {
+    font: 18px "Pridi";
+    color: lightcyan;
+}
+
+#row-average {
+    color: lightcoral;
+}
+
 #mean-runtime,
 #mean-memory {
-    margin-top: -10px;
-    font: 18px "Anton";
+    color: cyan;
 }
 
 #pie-chart-border {
@@ -329,6 +385,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: loading 1s 1;
 }
 
 #solutions-container {
@@ -387,7 +444,7 @@ footer {
 
 #left-page-button-border, #right-page-button-border {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100px;
@@ -399,9 +456,9 @@ footer {
 #left-page-button,
 #right-page-button {
     height: 90px;
-    width: 65px;
+    width: 67.5px;
     border: none;
-    border-radius: 17.5px;
+    border-radius: 18px;
 
     font: 28px "Anton";
     color: blue;
@@ -482,4 +539,9 @@ input::-webkit-calendar-picker-indicator {
 @keyframes border-flash {
     35% {border-color: purple;}
     50% {border-color: aqua;}
+}
+
+@keyframes loading {
+    0%, 10% {opacity: 0;}
+    100% {opacity: 1;}
 }

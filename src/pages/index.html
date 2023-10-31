@@ -30,22 +30,52 @@
                 <div id="stats-text">Profile Info: </div>
                 <div id="problem-stat-border">
                     <div id="problem-stat-div">
-                        <p id="problem-stat-title">LeetCode Problems Solved</p>
-                        <p class="stats">Easy Problems: <span class="stats-input"></span></p>
-                        <p class="stats">Medium Problems: <span class="stats-input"></span></p>
-                        <p class="stats">Hard Problems: <span class="stats-input"></span></p>
-                        <p class="stats">
-                            Java: <span class="stats-input"></span>, 
-                            C: <span class="stats-input"></span>, 
-                            C++: <span class="stats-input"></span>
-                        </p>
-                        <p class="stats">
-                            Python3: <span class="stats-input"></span>, 
-                            JavaScript: <span class="stats-input"></span>
-                        </p>
-                        <p class="stats">Total Solved: <span class="stats-input"></span></p>
-                        <p id="mean-runtime">Average Runtime: </p>
-                        <p id="mean-memory">Average Memory Usage: </p>
+                        <div id="problem-stat-title">LeetCode Problems Solved</div>
+                        <table>
+                            <tr>
+                                <th id="stat-easy">Easy:</th>
+                                <th id="stat-medium">Medium:</th>
+                                <th id="stat-hard">Hard:</th>
+                                <th id="stat-total">Total:</th>
+                            </tr>
+
+                            <tr>
+                                <td class="stats-input"></td>
+                                <td class="stats-input"></td>
+                                <td class="stats-input"></td>
+                                <td class="stats-input"></td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr id="row-language">
+                                <th>Java</th>
+                                <th>JavaScript</th>
+                                <th>Python3</th>
+                                <th>C</th>
+                                <th>C++</th>
+                            </tr>
+
+                            <tr>
+                                <td class="stats-input"></td>
+                                <td class="stats-input"></td>
+                                <td class="stats-input"></td>
+                                <td class="stats-input"></td>
+                                <td class="stats-input"></td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr id="row-average">
+                                <th>Average Runtime:</th>
+                                <th>Average Memory:</th>
+                            </tr>
+
+                            <tr>
+                                <td id="mean-runtime"></td>
+                                <td id="mean-memory"></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>

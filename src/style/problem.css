@@ -150,6 +150,7 @@ footer {
     justify-content: center;
     gap: 400px;
     margin-top: 15vh;
+    animation: loading 1s 1;
 }
 
 #problem-null {
@@ -246,6 +247,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    animation: loading 1s 1;
 }
 
 #code-box {
@@ -308,4 +310,9 @@ input::-webkit-calendar-picker-indicator {
 @font-face {
     font-family: "Pridi";
     src: url(./fonts/Pridi/Pridi-ExtraLight.ttf);
+}
+
+@keyframes loading {
+    0%, 10% {opacity: 0;}
+    100% {opacity: 1;}
 }

@@ -1,10 +1,31 @@
 package med.med5;
+import java.util.*;
 
 /*
  * 5: Longest Palindromic Substring
- * Last Updated: Jan 03, 2023
+ * Last Updated: Oct 27, 2023
  */
 public class Solution {
+    public String longestPalindrome(String s) {
+        char[] sArray = s.toCharArray();
+        int n = s.length(), idx = 0;
+
+        for (int i = n; i > 1; i--) {
+            for (int j = 0; j + i <= n; j++) {
+                for (idx = 0; idx < i / 2; idx++) {
+                    if (sArray[idx + j] != sArray[(i - 1 - idx + j)]) break;
+                }
+
+                if (idx == i / 2) return new String(Arrays.copyOfRange(sArray, j, j + i));
+            }
+        }
+
+        return new String("" + sArray[0]);
+    }
+}
+
+// My Original Solution
+/*public class Solution {
     public String longestPalindrome(String s) {
         String pal = s.substring(0, 1);
         int len = s.length();
@@ -37,4 +58,4 @@ public class Solution {
 
         return pal;
     }
-}
+}*/
