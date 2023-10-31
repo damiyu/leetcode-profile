@@ -13,9 +13,10 @@ async function init() {
     // pieIsReversing = n[7]; is used to track when the pie chart stripes are reversing.
     let n = [5, false, 55, false, 0, false, 0, false];
     setInterval(gradientBackgrounds, 25, n);
+    homePage();
     copyGmail();
 
-    let searchProblem = localStorage.getItem('problem-num');
+    let searchProblem = [localStorage.getItem('problem-num')];
     const problems = await Util.getJSON('../database/problems.json');
     const problemCnts = statsMaker(problems);
     pieChartSetUp(problemCnts);
@@ -23,11 +24,11 @@ async function init() {
     let pageNum = [1], filter = ["All", "All", "All", "All"];
     buildProblemDivs();
     hideProblemDivs();
-    problemPopulate(problems, problems, searchProblem, pageNum[0]);
+    problemPopulate(problems, problems, searchProblem, pageNum);
     gradeProblems();
     pageTransfer();
     searchRecommend(problems);
-    searchCall(problems, pageNum);
+    searchCall(problems, searchProblem, pageNum);
     menuShift(problems, filter, searchProblem, pageNum);
     filterSearch(problems, filter, searchProblem, pageNum);
 }
@@ -68,6 +69,14 @@ function gradientBackgrounds(n) {
     if (n[7] || (n[6] += 0.5) > 360) n[7] = (n[6] -= 0.5) != 0;
 }
 
+function homePage() {
+    const titleDivRef = document.getElementById('title-div');
+    
+    titleDivRef.addEventListener('click', function() {
+        window.location = './index.html';
+    });
+}
+
 function copyGmail() {
     const link = document.getElementById('gmail-link');
 
@@ -81,9 +90,9 @@ function statsMaker(problems) {
     const statsInputRef = document.getElementsByClassName('stats-input');
     const meanRunRef = document.getElementById('mean-runtime');
     const meanMemRef = document.getElementById('mean-memory');
-    const langList = ["Java", "C", "C++", "Python3", "JavaScript"];
+    const langList = ["Java", "JavaScript", "Python3", "C", "C++"];
     let totalProblemCnt = problems.length, averageRun = 0.0, averageMem = 0.0;
-    let problemStatsCnts = [problems.length, 0, 0, 0, 0, 0, 0, 0, problems.length];
+    let problemStatsCnts = [problems.length, 0, 0, problems.length, 0, 0, 0, 0, 0];
 
     for (let i = 0; i < totalProblemCnt; i++) {
         if (problems[i].difficulty == "Medium") {
@@ -95,7 +104,7 @@ function statsMaker(problems) {
         }
 
         // Increment the correct language element.
-        for (let j = 0; j < 5; j++) if (problems[i].language == langList[j]) problemStatsCnts[j + 3]++;
+        for (let j = 0; j < 5; j++) if (problems[i].language == langList[j]) problemStatsCnts[j + 4]++;
         averageRun += parseFloat(problems[i].runtime);
         averageMem += parseFloat(problems[i].memory);
     }
@@ -111,7 +120,8 @@ function statsMaker(problems) {
 function pieChartSetUp(problemCnts) {
     const pieRef = document.getElementById('pie-chart');
     const statsInputRef = document.getElementsByClassName('stats-input');
-    let easySection = (problemCnts[0] / problemCnts[8]) * 100, medSection = (problemCnts[1] / problemCnts[8]) * 100 + easySection;
+    let easySection = (problemCnts[0] / problemCnts[3]) * 100, medSection = (problemCnts[1] / problemCnts[3]) * 100 + easySection;
+    let n = problemCnts.length;
 
     easySection = easySection.toFixed(0);
     medSection = medSection.toFixed(0);
@@ -120,7 +130,7 @@ function pieChartSetUp(problemCnts) {
     statsInputRef[0].textContent += " (" + easySection + "%)";
     statsInputRef[1].textContent += " (" + (medSection - easySection) + "%)";
     statsInputRef[2].textContent += " (" + (100 - medSection) + "%)";
-    for (let i = 3; i < 8; i++) statsInputRef[i].textContent += " (" + (problemCnts[i] / problemCnts[8] * 100).toFixed(0) + "%)";
+    for (let i = 4; i < n; i++) statsInputRef[i].textContent += " (" + (problemCnts[i] / problemCnts[3] * 100).toFixed(0) + "%)";
 
     pieRef.style.backgroundImage = "conic-gradient(lime 0% " + easySection + "%, yellow " + easySection +
                                                         "% " + medSection + "%, crimson " + medSection + "% 100%)";
@@ -172,7 +182,7 @@ function problemPopulate(problems, appliedFilter, searchProblem, pageNum) {
     const problemTime = document.getElementsByClassName('time');
     const problemMem = document.getElementsByClassName('memory');
     const problemHelp = document.getElementsByClassName('help');
-    let problemCnt = appliedFilter.length, problemIdx = 15 * pageNum - 15, searchIdx = Util.problemSearch(problems, searchProblem);
+    let problemCnt = appliedFilter.length, problemIdx = 15 * pageNum[0] - 15, searchIdx = Util.problemSearch(problems, searchProblem[0]);
 
     // First problem card is the previously searched problem or the default problem.
     if (searchIdx != -1) {
@@ -195,7 +205,7 @@ function problemPopulate(problems, appliedFilter, searchProblem, pageNum) {
 
     // Display the page number and problem count.
     document.getElementById('total-problem-count').textContent = problemCnt;
-    document.getElementById('current-page-number').textContent = problemCnt > 0 ? pageNum : 0;
+    document.getElementById('current-page-number').textContent = problemCnt > 0 ? pageNum[0] : 0;
     document.getElementById('total-page-number').textContent = Math.ceil(problemCnt / 15);
 
     // Skip the first problem card because of the search card.
@@ -255,6 +265,12 @@ function pageTransfer() {
 
     for (let i = 0; i < cnt; i++) {
         if (problemDiv[i].childElementCount > 0) {
+            problemDiv[i].addEventListener('mouseenter', function() {
+                const problemAudio = new Audio('../media/audios/hover-over.mp3');
+                problemAudio.volume = 0.2;
+                problemAudio.play().catch(error => {});
+            });
+
             // Adds listener to all problem cards and redirects to the problem page with the chosen problem number.
             problemDiv[i].addEventListener('click', function() {
                 const numberRef = document.getElementsByClassName('number');
@@ -282,18 +298,23 @@ function searchRecommend(problems) {
     }
 }
 
-function searchCall(problems, pageNum) {
+function searchCall(problems, searchProblem, pageNum) {
     const searchRef = document.getElementById('search-button');
     const inputRef = document.getElementById('search-input');
+    const searchAudio = new Audio('../media/audios/search-enter.mp3');
+    searchAudio.volume = 0.5;
 
     searchRef.addEventListener('click', function() {
         let problemNum = inputRef.value;
+        searchAudio.currentTime = 0;
+        searchAudio.play();
 
         // If problem exists, set the search card to that problem idx.
         if (Util.problemSearch(problems, problemNum) != -1) {
             // Store the idx so we know which problem to display.
             localStorage.setItem('problem-num', problemNum);
-            problemPopulate(problems, problems, problemNum, pageNum);
+            searchProblem[0] = problemNum;
+            problemPopulate(problems, problems, searchProblem, pageNum);
             gradeProblems();
 
             // Bring the user to the top of the page to view the problem.
@@ -315,9 +336,14 @@ function menuShift(problems, filter, searchProblem, pageNum) {
     const rightMenuButton = document.getElementById('right-page-button');
     const leftPageButtonBorderRef = document.getElementById('left-page-button-border');
     const rightPageButtonBorderRef = document.getElementById('right-page-button-border');
+    const pageFlipAudio = new Audio('../media/audios/page-flip.wav');
+    pageFlipAudio.volume = 0.3;
 
     if (leftMenuButton != null) {
         leftMenuButton.addEventListener('click', function() {
+            pageFlipAudio.currentTime = 0;
+            pageFlipAudio.play();
+
             if (pageNum[0] > 1) {
                 // Make right menu button visible and hide left menu button when on first page.
                 rightPageButtonBorderRef.style.visibility = "visible";
@@ -325,6 +351,7 @@ function menuShift(problems, filter, searchProblem, pageNum) {
 
                 // Repopulate the problem cards with the previous problems.
                 hideProblemDivs();
+
                 problemPopulate(problems, filterProblems(problems, filter), searchProblem, pageNum);
                 gradeProblems();
             }
@@ -334,6 +361,8 @@ function menuShift(problems, filter, searchProblem, pageNum) {
     if (rightMenuButton != null) {
         rightMenuButton.addEventListener('click', function() {
             let appliedFilter = filterProblems(problems, filter);
+            pageFlipAudio.currentTime = 0;
+            pageFlipAudio.play();
 
             if (pageNum[0] < appliedFilter.length / 15) {
                 // Make left menu button visible and hide right menu button when on last page.
@@ -355,8 +384,22 @@ function filterSearch(problems, filter, searchProblem, pageNum) {
     const percentileFilterRef = document.getElementById('percentile-filter');
     const solutionFilterRef = document.getElementById('solution-filter');
     const filterButtonRef = document.getElementById('filter-button');
+    const filterSelectAudio = new Audio('../media/audios/filter-pick.wav'), applyAudio = new Audio('../media/audios/apply-filter.mp4');
+    applyAudio.volume = 0.5;
 
-    filterButtonRef.addEventListener('click', function() {        
+    let filters = [difficultyFilterRef, languageFilterRef, percentileFilterRef, solutionFilterRef];
+    let n = filters.length;
+    for (let i = 0; i < n; i++) {
+        filters[i].addEventListener('click', function() {
+            filterSelectAudio.currentTime = 0;
+            filterSelectAudio.play();
+        });
+    }
+
+    filterButtonRef.addEventListener('click', function() {
+        applyAudio.currentTime = 0;
+        applyAudio.play();
+
         filter[0] = difficultyFilterRef.value;
         filter[1] = languageFilterRef.value;
         filter[2] = percentileFilterRef.value

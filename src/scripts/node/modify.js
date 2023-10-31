@@ -2,28 +2,29 @@ build();
 
 function build() {
     // Get cmd line arguments and count them.
-    let argv = process.argv, argc = argv.length;
+    let argv = process.argv, argc = argv.length, path = '../database/problems.json';
     var fs = require('fs');
     
     // Only allow valid arguments.
-    if (argc == 11 && argv[2] == "add") {
-        if (entryChecker(argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10])) {
-            if (!searchNumber(fs, argv[3], argv[4])) {
+    if (argc == 10 && argv[2] == "add") {
+        if (entryChecker(argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9])) {
+            if (!searchNumber(fs, path, argv[3])) {
                 // Log a new entry, reorder the database, and check if other components are in sync.
-                newEntry(fs, argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9], argv[10]);
-                orderEntries(fs, argv[3]);
-                fileImageEntryCheck(fs, argv[3]);
+                newEntry(fs, path, argv[3], argv[4], argv[5], argv[6], argv[7], argv[8], argv[9]);
+                orderEntries(fs, path);
+                console.log("Appended object was successful!");
+                fileImageEntryCheck(fs, path);
             } else {
                 console.log("Fail, duplicate problem number found!");
             }
         }
-    } else if (argc == 4 && argv[2] == "sort") {
-        orderEntries(fs, argv[3]);
-    } else if (argc == 4 && argv[2] == "order") {
-        let jsonFile = JSON.parse(fs.readFileSync(argv[3]));
+    } else if (argc == 3 && argv[2] == "sort") {
+        orderEntries(fs, path);
+    } else if (argc == 3 && argv[2] == "order") {
+        let jsonFile = JSON.parse(fs.readFileSync(path));
         isAscending(jsonFile);
-    } else if (argc = 4 && argv[2] == "exist") {
-        fileImageEntryCheck(fs, argv[3]);
+    } else if (argc = 3 && argv[2] == "exist") {
+        fileImageEntryCheck(fs, path);
     } else {
         console.log("Invalid arguments, try again!");
     }
@@ -152,10 +153,10 @@ function orderEntries(fs, filePath) {
     }
 
     if (isAscending(jsonFile)) {
-        console.log("Appended object was successful!");
+        console.log("Sort complete!");
         fs.writeFileSync(filePath, JSON.stringify(jsonFile, null, '\t'));
     } else {
-        console.log("Append fail, check 'function orderEntries()'!!!");
+        console.log("Sort failed and new object discarded, please check 'function orderEntries()'!!!");
     }
 }
 
@@ -208,4 +209,6 @@ async function fileImageEntryCheck(fs, filePath) {
             console.log("The images for problem #" + num + " doesn't exist!");
         }
     }
+
+    console.log("Sync search complete!");
 }
