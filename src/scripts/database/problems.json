@@ -909,6 +909,15 @@
 		"help": "No"
 	},
 	{
+		"number": "1759",
+		"difficulty": "Medium",
+		"date": "Nov 10, 2023",
+		"language": "C",
+		"runtime": "83.33",
+		"memory": "100.00",
+		"help": "No"
+	},
+	{
 		"number": "1793",
 		"difficulty": "Hard",
 		"date": "Oct 22, 2023",
