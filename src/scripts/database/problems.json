@@ -297,6 +297,15 @@
 		"help": "No"
 	},
 	{
+		"number": "91",
+		"difficulty": "Medium",
+		"date": "Dec 25, 2023",
+		"language": "C",
+		"runtime": "100.00",
+		"memory": "74.75",
+		"help": "Yes"
+	},
+	{
 		"number": "92",
 		"difficulty": "Medium",
 		"date": "Sep 7, 2023",
@@ -540,6 +549,15 @@
 		"help": "No"
 	},
 	{
+		"number": "455",
+		"difficulty": "Easy",
+		"date": "Dec 31, 2023",
+		"language": "JavaScript",
+		"runtime": "87.14",
+		"memory": "65.00",
+		"help": "No"
+	},
+	{
 		"number": "456",
 		"difficulty": "Medium",
 		"date": "Sep 30, 2023",
@@ -619,6 +637,15 @@
 		"runtime": "98.90",
 		"memory": "70.40",
 		"help": "Yes"
+	},
+	{
+		"number": "661",
+		"difficulty": "Easy",
+		"date": "Dec 19, 2023",
+		"language": "C",
+		"runtime": "100.00",
+		"memory": "87.50",
+		"help": "No"
 	},
 	{
 		"number": "688",
@@ -765,6 +792,15 @@
 		"help": "No"
 	},
 	{
+		"number": "1155",
+		"difficulty": "Medium",
+		"date": "Dec 27, 2023",
+		"language": "C",
+		"runtime": "14.00",
+		"memory": "72.67",
+		"help": "Yes"
+	},
+	{
 		"number": "1218",
 		"difficulty": "Medium",
 		"date": "Sep 4, 2023",
@@ -799,6 +835,15 @@
 		"runtime": "83.60",
 		"memory": "94.31",
 		"help": "No"
+	},
+	{
+		"number": "1335",
+		"difficulty": "Hard",
+		"date": "Dec 30, 2023",
+		"language": "Python3",
+		"runtime": "94.67",
+		"memory": "94.13",
+		"help": "Yes"
 	},
 	{
 		"number": "1337",
@@ -846,6 +891,15 @@
 		"help": "Yes"
 	},
 	{
+		"number": "1422",
+		"difficulty": "Easy",
+		"date": "Dec 22, 2023",
+		"language": "C",
+		"runtime": "100.00",
+		"memory": "100.00",
+		"help": "No"
+	},
+	{
 		"number": "1425",
 		"difficulty": "Hard",
 		"date": "Oct 21, 2023",
@@ -864,12 +918,39 @@
 		"help": "Yes"
 	},
 	{
+		"number": "1496",
+		"difficulty": "Easy",
+		"date": "Dec 23, 2023",
+		"language": "Python3",
+		"runtime": "91.70",
+		"memory": "5.63",
+		"help": "No"
+	},
+	{
 		"number": "1512",
 		"difficulty": "Easy",
 		"date": "Oct 2, 2023",
 		"language": "Python3",
 		"runtime": "96.55",
 		"memory": "97.25",
+		"help": "No"
+	},
+	{
+		"number": "1531",
+		"difficulty": "Hard",
+		"date": "Dec 28, 2023",
+		"language": "Python3",
+		"runtime": "65.00",
+		"memory": "95.00",
+		"help": "Yes"
+	},
+	{
+		"number": "1578",
+		"difficulty": "Medium",
+		"date": "Dec 27, 2023",
+		"language": "C",
+		"runtime": "25.00",
+		"memory": "100.00",
 		"help": "No"
 	},
 	{
@@ -891,6 +972,24 @@
 		"help": "No"
 	},
 	{
+		"number": "1624",
+		"difficulty": "Easy",
+		"date": "Dec 31, 2023",
+		"language": "JavaScript",
+		"runtime": "58.60",
+		"memory": "80.65",
+		"help": "No"
+	},
+	{
+		"number": "1637",
+		"difficulty": "Medium",
+		"date": "Dec 21, 2023",
+		"language": "C",
+		"runtime": "84.62",
+		"memory": "92.31",
+		"help": "No"
+	},
+	{
 		"number": "1658",
 		"difficulty": "Medium",
 		"date": "Sep 20, 2023",
@@ -906,6 +1005,15 @@
 		"language": "Java",
 		"runtime": "100.00",
 		"memory": "69.80",
+		"help": "No"
+	},
+	{
+		"number": "1758",
+		"difficulty": "Easy",
+		"date": "Dec 24, 2023",
+		"language": "C",
+		"runtime": "100.00",
+		"memory": "80.95",
 		"help": "No"
 	},
 	{
@@ -936,6 +1044,15 @@
 		"help": "No"
 	},
 	{
+		"number": "1897",
+		"difficulty": "Easy",
+		"date": "Dec 30, 2023",
+		"language": "JavaScript",
+		"runtime": "85.92",
+		"memory": "85.92",
+		"help": "No"
+	},
+	{
 		"number": "2009",
 		"difficulty": "Hard",
 		"date": "Oct 10, 2023",
@@ -961,6 +1078,15 @@
 		"runtime": "94.17",
 		"memory": "73.47",
 		"help": "Yes"
+	},
+	{
+		"number": "2125",
+		"difficulty": "Medium",
+		"date": "Jan 2, 2023",
+		"language": "JavaScript",
+		"runtime": "85.88",
+		"memory": "98.82",
+		"help": "No"
 	},
 	{
 		"number": "2141",
@@ -1017,12 +1143,30 @@
 		"help": "No"
 	},
 	{
+		"number": "2610",
+		"difficulty": "Medium",
+		"date": "Jan 1, 2024",
+		"language": "JavaScript",
+		"runtime": "82.47",
+		"memory": "73.20",
+		"help": "No"
+	},
+	{
 		"number": "2616",
 		"difficulty": "Medium",
 		"date": "Aug 9, 2023",
 		"language": "Java",
 		"runtime": "55.75",
 		"memory": "81.86",
+		"help": "No"
+	},
+	{
+		"number": "2706",
+		"difficulty": "Easy",
+		"date": "Dec 20, 2023",
+		"language": "C",
+		"runtime": "100.00",
+		"memory": "59.52",
 		"help": "No"
 	},
 	{

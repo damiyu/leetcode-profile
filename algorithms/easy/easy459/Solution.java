@@ -5,7 +5,6 @@ import java.util.*;
  * 459: Repeated Substring Pattern
  * Last Updated: Sep 3, 2023
  */
-
 public class Solution {
     public boolean repeatedSubstringPattern(String s) {
         Set<String> com = new HashSet<>();

@@ -1,7 +1,7 @@
-/**
+/*
  * 1759: Count Number of Homogenous Substrings
  * Last Updated: Nov 10, 2023
-*/
+ */
 int countHomogenous(char* s) {
     long long cnt = 1, tot = 0;
     int n = strlen(s);
