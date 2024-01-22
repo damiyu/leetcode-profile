@@ -1,5 +1,9 @@
-# Ignore all java compiled classes
+# Ignore my makefile and all java compiled classes
+makefile
 *.class
 
 # Ignore the testing directory
 /backend
+
+# Ignore CPP Properties
+/.vscode
