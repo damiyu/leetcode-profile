@@ -23,6 +23,14 @@ export function problemSearch(problems, num) {
 }
 
 export async function getJSON(url) {
-	const { default: json } = await import(url, { assert: { type: 'json' } });
-	return json;
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Network response was not ok');
+        
+        const data = await response.json();
+
+        return data;
+    } catch(error) {
+        console.error('Error fetching the JSON file:', error);
+    }
 }

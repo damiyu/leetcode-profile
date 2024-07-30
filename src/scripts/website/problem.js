@@ -3,7 +3,7 @@ import * as Util from './utilities.js';
 init();
 
 async function init() {
-    const problems = await Util.getJSON('../database/problems.json');
+    const problems = await Util.getJSON('../scripts/database/problems.json');
     const problemNum = localStorage.getItem('problem-num');
 
     homePage();

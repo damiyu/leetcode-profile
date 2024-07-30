@@ -17,7 +17,7 @@ async function init() {
     copyGmail();
 
     let searchProblem = [localStorage.getItem('problem-num')];
-    const problems = await Util.getJSON('../database/problems.json');
+    const problems = await Util.getJSON('../scripts/database/problems.json');
     const problemCnts = statsMaker(problems);
     pieChartSetUp(problemCnts);
 
