@@ -203,10 +203,10 @@ async function fileImageEntryCheck(fs, filePath) {
 
         // Checks if problem directories exist and if their images are in media.
         if (!fs.existsSync('../../../algorithms/' + diff + "/" + diff + num)) {
-            console.log("The programming files for problem #" + num + " doesn't exists!");
+            console.log("The programming files for problem #" + num + " does not exist!");
         }
         if (!fs.existsSync('../../media/images/' + diff + "/" + diff + num + ".png")) {
-            console.log("The images for problem #" + num + " doesn't exist!");
+            console.log("The images for problem #" + num + " does not exist!");
         }
     }
 

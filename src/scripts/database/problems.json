@@ -243,6 +243,33 @@
 		"help": "No"
 	},
 	{
+		"number": "41",
+		"difficulty": "Hard",
+		"date": "Mar 25, 2024",
+		"language": "JavaScript",
+		"runtime": "92.84",
+		"memory": "99.37",
+		"help": "No"
+	},
+	{
+		"number": "42",
+		"difficulty": "Hard",
+		"date": "Apr 27, 2024",
+		"language": "JavaScript",
+		"runtime": "96.88",
+		"memory": "52.42",
+		"help": "Yes"
+	},
+	{
+		"number": "49",
+		"difficulty": "Medium",
+		"date": "Feb 9, 2024",
+		"language": "C++",
+		"runtime": "60.36",
+		"memory": "67.14",
+		"help": "No"
+	},
+	{
 		"number": "50",
 		"difficulty": "Medium",
 		"date": "Jul 24, 2023",
@@ -250,6 +277,24 @@
 		"runtime": "100.00",
 		"memory": "86.57",
 		"help": "Yes"
+	},
+	{
+		"number": "57",
+		"difficulty": "Medium",
+		"date": "Mar 17, 2024",
+		"language": "JavaScript",
+		"runtime": "85.63",
+		"memory": "43.36",
+		"help": "No"
+	},
+	{
+		"number": "58",
+		"difficulty": "Easy",
+		"date": "Apr 1, 2024",
+		"language": "JavaScript",
+		"runtime": "64.43",
+		"memory": "50.04",
+		"help": "No"
 	},
 	{
 		"number": "68",
@@ -279,6 +324,15 @@
 		"help": "No"
 	},
 	{
+		"number": "76",
+		"difficulty": "Hard",
+		"date": "Jul 26, 2024",
+		"language": "C++",
+		"runtime": "90.03",
+		"memory": "68.08",
+		"help": "No"
+	},
+	{
 		"number": "77",
 		"difficulty": "Medium",
 		"date": "Aug 1, 2023",
@@ -288,12 +342,30 @@
 		"help": "No"
 	},
 	{
+		"number": "79",
+		"difficulty": "Medium",
+		"date": "Apr 3, 2024",
+		"language": "JavaScript",
+		"runtime": "97.58",
+		"memory": "79.88",
+		"help": "Yes"
+	},
+	{
 		"number": "81",
 		"difficulty": "Medium",
 		"date": "Aug 10, 2023",
 		"language": "Java",
 		"runtime": "100.00",
 		"memory": "78.20",
+		"help": "No"
+	},
+	{
+		"number": "85",
+		"difficulty": "Hard",
+		"date": "Apr 12, 2024",
+		"language": "JavaScript",
+		"runtime": "5.25",
+		"memory": "18.21",
 		"help": "No"
 	},
 	{
@@ -333,6 +405,15 @@
 		"help": "No"
 	},
 	{
+		"number": "100",
+		"difficulty": "Easy",
+		"date": "Feb 25, 2024",
+		"language": "JavaScript",
+		"runtime": "53.09",
+		"memory": "45.39",
+		"help": "No"
+	},
+	{
 		"number": "118",
 		"difficulty": "Easy",
 		"date": "Sep 8, 2023",
@@ -348,6 +429,15 @@
 		"language": "Python3",
 		"runtime": "88.11",
 		"memory": "53.14",
+		"help": "No"
+	},
+	{
+		"number": "129",
+		"difficulty": "Medium",
+		"date": "Apr 14, 2024",
+		"language": "JavaScript",
+		"runtime": "75.58",
+		"memory": "95.58",
 		"help": "No"
 	},
 	{
@@ -387,6 +477,33 @@
 		"help": "No"
 	},
 	{
+		"number": "143",
+		"difficulty": "Medium",
+		"date": "Mar 23, 2024",
+		"language": "JavaScript",
+		"runtime": "72.83",
+		"memory": "32.24",
+		"help": "No"
+	},
+	{
+		"number": "150",
+		"difficulty": "Medium",
+		"date": "Jan 31, 2024",
+		"language": "C++",
+		"runtime": "91.28",
+		"memory": "58.70",
+		"help": "No"
+	},
+	{
+		"number": "165",
+		"difficulty": "Medium",
+		"date": "Jul 1, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "25.11",
+		"help": "No"
+	},
+	{
 		"number": "168",
 		"difficulty": "Easy",
 		"date": "Aug 22, 2023",
@@ -396,12 +513,57 @@
 		"help": "No"
 	},
 	{
+		"number": "169",
+		"difficulty": "Easy",
+		"date": "Feb 12, 2024",
+		"language": "C++",
+		"runtime": "83.64",
+		"memory": "35.07",
+		"help": "No"
+	},
+	{
 		"number": "198",
 		"difficulty": "Medium",
 		"date": "Jan 21, 2024",
 		"language": "C++",
 		"runtime": "100.00",
 		"memory": "5.08",
+		"help": "No"
+	},
+	{
+		"number": "200",
+		"difficulty": "Medium",
+		"date": "Apr 18, 2024",
+		"language": "JavaScript",
+		"runtime": "53.07",
+		"memory": "37.02",
+		"help": "No"
+	},
+	{
+		"number": "201",
+		"difficulty": "Medium",
+		"date": "Mar 6, 2024",
+		"language": "JavaScript",
+		"runtime": "99.62",
+		"memory": "54.36",
+		"help": "No"
+	},
+	{
+		"number": "205",
+		"difficulty": "Easy",
+		"date": "Apr 2, 2024",
+		"language": "JavaScript",
+		"runtime": "76.50",
+		"memory": "50.80",
+		"help": "No"
+	},
+	{
+		"number": "206",
+		"difficulty": "Easy",
+		"date": "Mar 21, 2024",
+		"language": "JavaScript",
+		"runtime": "90.93",
+		"memory": "46.90",
 		"help": "No"
 	},
 	{
@@ -432,6 +594,24 @@
 		"help": "No"
 	},
 	{
+		"number": "231",
+		"difficulty": "Easy",
+		"date": "Feb 19, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "19.56",
+		"help": "No"
+	},
+	{
+		"number": "232",
+		"difficulty": "Easy",
+		"date": "Jan 29, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "12.38",
+		"help": "No"
+	},
+	{
 		"number": "234",
 		"difficulty": "Easy",
 		"date": "Jul 26, 2023",
@@ -441,12 +621,48 @@
 		"help": "No"
 	},
 	{
+		"number": "237",
+		"difficulty": "Medium",
+		"date": "May 5, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "43.50",
+		"help": "No"
+	},
+	{
+		"number": "238",
+		"difficulty": "Medium",
+		"date": "Mar 15, 2024",
+		"language": "JavaScript",
+		"runtime": "99.49",
+		"memory": "39.78",
+		"help": "No"
+	},
+	{
 		"number": "239",
 		"difficulty": "Hard",
 		"date": "Aug 18, 2023",
 		"language": "Java",
 		"runtime": "5.10",
 		"memory": "29.42",
+		"help": "No"
+	},
+	{
+		"number": "268",
+		"difficulty": "Easy",
+		"date": "Feb 19, 2024",
+		"language": "C++",
+		"runtime": "85.38",
+		"memory": "32.85",
+		"help": "No"
+	},
+	{
+		"number": "279",
+		"difficulty": "Medium",
+		"date": "Feb 9, 2024",
+		"language": "C++",
+		"runtime": "50.72",
+		"memory": "62.03",
 		"help": "No"
 	},
 	{
@@ -465,6 +681,15 @@
 		"language": "JavaScript",
 		"runtime": "73.11",
 		"memory": "89.45",
+		"help": "Yes"
+	},
+	{
+		"number": "310",
+		"difficulty": "Medium",
+		"date": "Apr 26, 2024",
+		"language": "JavaScript",
+		"runtime": "93.88",
+		"memory": "86.80",
 		"help": "Yes"
 	},
 	{
@@ -513,6 +738,33 @@
 		"help": "No"
 	},
 	{
+		"number": "349",
+		"difficulty": "Easy",
+		"date": "Mar 10, 2024",
+		"language": "JavaScript",
+		"runtime": "83.45",
+		"memory": "59.16",
+		"help": "No"
+	},
+	{
+		"number": "350",
+		"difficulty": "Easy",
+		"date": "Jul 1, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "52.12",
+		"help": "No"
+	},
+	{
+		"number": "368",
+		"difficulty": "Medium",
+		"date": "Feb 9, 2024",
+		"language": "C++",
+		"runtime": "92.51",
+		"memory": "44.70",
+		"help": "Yes"
+	},
+	{
 		"number": "377",
 		"difficulty": "Medium",
 		"date": "Sep 9, 2023",
@@ -540,6 +792,15 @@
 		"help": "No"
 	},
 	{
+		"number": "387",
+		"difficulty": "Easy",
+		"date": "Feb 5, 2024",
+		"language": "C++",
+		"runtime": "97.22",
+		"memory": "28.80",
+		"help": "No"
+	},
+	{
 		"number": "389",
 		"difficulty": "Easy",
 		"date": "Sep 25, 2023",
@@ -558,6 +819,15 @@
 		"help": "No"
 	},
 	{
+		"number": "402",
+		"difficulty": "Medium",
+		"date": "Apr 10, 2024",
+		"language": "JavaScript",
+		"runtime": "54.79",
+		"memory": "86.47",
+		"help": "No"
+	},
+	{
 		"number": "403",
 		"difficulty": "Hard",
 		"date": "Aug 27, 2023",
@@ -567,12 +837,30 @@
 		"help": "Yes"
 	},
 	{
+		"number": "404",
+		"difficulty": "Easy",
+		"date": "Apr 13, 2024",
+		"language": "JavaScript",
+		"runtime": "76.78",
+		"memory": "50.21",
+		"help": "No"
+	},
+	{
 		"number": "412",
 		"difficulty": "Easy",
 		"date": "Dec 23, 2022",
 		"language": "Java",
 		"runtime": "99.81",
 		"memory": "99.97",
+		"help": "No"
+	},
+	{
+		"number": "442",
+		"difficulty": "Medium",
+		"date": "Mar 25, 2024",
+		"language": "JavaScript",
+		"runtime": "99.52",
+		"memory": "99.21",
 		"help": "No"
 	},
 	{
@@ -592,6 +880,24 @@
 		"runtime": "45.45",
 		"memory": "54.55",
 		"help": "Yes"
+	},
+	{
+		"number": "451",
+		"difficulty": "Medium",
+		"date": "Feb 14, 2024",
+		"language": "C++",
+		"runtime": "72.11",
+		"memory": "74.67",
+		"help": "No"
+	},
+	{
+		"number": "452",
+		"difficulty": "Medium",
+		"date": "Mar 18, 2024",
+		"language": "JavaScript",
+		"runtime": "98.91",
+		"memory": "99.56",
+		"help": "No"
 	},
 	{
 		"number": "455",
@@ -630,6 +936,15 @@
 		"help": "No"
 	},
 	{
+		"number": "463",
+		"difficulty": "Easy",
+		"date": "Apr 17, 2024",
+		"language": "JavaScript",
+		"runtime": "83.70",
+		"memory": "86.08",
+		"help": "No"
+	},
+	{
 		"number": "486",
 		"difficulty": "Medium",
 		"date": "Jul 28, 2023",
@@ -637,6 +952,33 @@
 		"runtime": "100.00",
 		"memory": "80.67",
 		"help": "No"
+	},
+	{
+		"number": "506",
+		"difficulty": "Easy",
+		"date": "May 8, 2024",
+		"language": "C++",
+		"runtime": "96.69",
+		"memory": "64.05",
+		"help": "No"
+	},
+	{
+		"number": "513",
+		"difficulty": "Medium",
+		"date": "Feb 27, 2024",
+		"language": "JavaScript",
+		"runtime": "100.00",
+		"memory": "61.99",
+		"help": "No"
+	},
+	{
+		"number": "514",
+		"difficulty": "Hard",
+		"date": "Apr 27, 2024",
+		"language": "JavaScript",
+		"runtime": "80.00",
+		"memory": "60.00",
+		"help": "Yes"
 	},
 	{
 		"number": "515",
@@ -657,12 +999,30 @@
 		"help": "Yes"
 	},
 	{
+		"number": "525",
+		"difficulty": "Medium",
+		"date": "Mar 16, 2024",
+		"language": "JavaScript",
+		"runtime": "93.02",
+		"memory": "85.41",
+		"help": "Yes"
+	},
+	{
 		"number": "542",
 		"difficulty": "Medium",
 		"date": "Aug 11, 2023",
 		"language": "Java",
 		"runtime": "6.28",
 		"memory": "92.94",
+		"help": "No"
+	},
+	{
+		"number": "543",
+		"difficulty": "Easy",
+		"date": "Feb 27, 2024",
+		"language": "JavaScript",
+		"runtime": "82.05",
+		"memory": "52.64",
 		"help": "No"
 	},
 	{
@@ -675,6 +1035,60 @@
 		"help": "No"
 	},
 	{
+		"number": "576",
+		"difficulty": "Medium",
+		"date": "Jan 31, 2024",
+		"language": "C++",
+		"runtime": "45.77",
+		"memory": "10.38",
+		"help": "No"
+	},
+	{
+		"number": "605",
+		"difficulty": "Easy",
+		"date": "Feb 25, 2024",
+		"language": "JavaScript",
+		"runtime": "96.49",
+		"memory": "46.01",
+		"help": "No"
+	},
+	{
+		"number": "621",
+		"difficulty": "Medium",
+		"date": "Mar 19, 2024",
+		"language": "JavaScript",
+		"runtime": "93.22",
+		"memory": "95.23",
+		"help": "No"
+	},
+	{
+		"number": "623",
+		"difficulty": "Medium",
+		"date": "Apr 16, 2024",
+		"language": "JavaScript",
+		"runtime": "93.51",
+		"memory": "63.64",
+		"help": "No"
+	},
+	{
+		"number": "629",
+		"difficulty": "Hard",
+		"date": "Jan 27, 2024",
+		"language": "C++",
+		"runtime": "63.78",
+		"memory": "89.73",
+		"help": "Yes"
+	},
+	{
+		"number": "645",
+		"difficulty": "Easy",
+		"date": "Jan 22, 2024",
+		"language": "C++",
+		"runtime": "88.91",
+		"memory": "35.30",
+		"help": "No"
+	},
+	{
 		"number": "646",
 		"difficulty": "Medium",
 		"date": "Aug 26, 2023",
@@ -684,12 +1098,30 @@
 		"help": "Yes"
 	},
 	{
+		"number": "647",
+		"difficulty": "Medium",
+		"date": "Jul 10, 2024",
+		"language": "C++",
+		"runtime": "32.28",
+		"memory": "56.59",
+		"help": "Yes"
+	},
+	{
 		"number": "661",
 		"difficulty": "Easy",
 		"date": "Dec 19, 2023",
 		"language": "C",
 		"runtime": "100.00",
 		"memory": "87.50",
+		"help": "No"
+	},
+	{
+		"number": "678",
+		"difficulty": "Medium",
+		"date": "Apr 7, 2024",
+		"language": "JavaScript",
+		"runtime": "84.64",
+		"memory": "52.43",
 		"help": "No"
 	},
 	{
@@ -720,6 +1152,15 @@
 		"help": "Yes"
 	},
 	{
+		"number": "713",
+		"difficulty": "Medium",
+		"date": "Mar 27, 2024",
+		"language": "JavaScript",
+		"runtime": "95.96",
+		"memory": "26.95",
+		"help": "No"
+	},
+	{
 		"number": "725",
 		"difficulty": "Medium",
 		"date": "Sep 6, 2023",
@@ -738,6 +1179,15 @@
 		"help": "No"
 	},
 	{
+		"number": "739",
+		"difficulty": "Medium",
+		"date": "Jan 31, 2024",
+		"language": "C++",
+		"runtime": "92.86",
+		"memory": "25.93",
+		"help": "No"
+	},
+	{
 		"number": "746",
 		"difficulty": "Easy",
 		"date": "Oct 13, 2023",
@@ -745,6 +1195,15 @@
 		"runtime": "75.63",
 		"memory": "78.02",
 		"help": "Yes"
+	},
+	{
+		"number": "752",
+		"difficulty": "Medium",
+		"date": "Apr 21, 2024",
+		"language": "Java",
+		"runtime": "56.98",
+		"memory": "78.25",
+		"help": "No"
 	},
 	{
 		"number": "767",
@@ -765,12 +1224,48 @@
 		"help": "No"
 	},
 	{
+		"number": "786",
+		"difficulty": "Medium",
+		"date": "Jul 9, 2024",
+		"language": "C++",
+		"runtime": "91.76",
+		"memory": "68.60",
+		"help": "Yes"
+	},
+	{
+		"number": "787",
+		"difficulty": "Medium",
+		"date": "Feb 23, 2024",
+		"language": "C++",
+		"runtime": "95.14",
+		"memory": "18.69",
+		"help": "Yes"
+	},
+	{
+		"number": "791",
+		"difficulty": "Medium",
+		"date": "Apr 22, 2024",
+		"language": "JavaScript",
+		"runtime": "97.90",
+		"memory": "60.01",
+		"help": "No"
+	},
+	{
 		"number": "823",
 		"difficulty": "Medium",
 		"date": "Oct 26, 2023",
 		"language": "Python3",
 		"runtime": "86.55",
 		"memory": "86.97",
+		"help": "Yes"
+	},
+	{
+		"number": "834",
+		"difficulty": "Hard",
+		"date": "Apr 27, 2024",
+		"language": "JavaScript",
+		"runtime": "78.26",
+		"memory": "86.96",
 		"help": "Yes"
 	},
 	{
@@ -801,6 +1296,24 @@
 		"help": "No"
 	},
 	{
+		"number": "857",
+		"difficulty": "Hard",
+		"date": "Jul 9, 2024",
+		"language": "C++",
+		"runtime": "5.33",
+		"memory": "5.15",
+		"help": "Yes"
+	},
+	{
+		"number": "861",
+		"difficulty": "Medium",
+		"date": "Jul 10, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "83.17",
+		"help": "No"
+	},
+	{
 		"number": "872",
 		"difficulty": "Easy",
 		"date": "Jan 9, 2024",
@@ -816,6 +1329,15 @@
 		"language": "Java",
 		"runtime": "100.00",
 		"memory": "67.53",
+		"help": "No"
+	},
+	{
+		"number": "881",
+		"difficulty": "Medium",
+		"date": "Jul 3, 2024",
+		"language": "C++",
+		"runtime": "69.50",
+		"memory": "82.83",
 		"help": "No"
 	},
 	{
@@ -846,6 +1368,15 @@
 		"help": "No"
 	},
 	{
+		"number": "930",
+		"difficulty": "Medium",
+		"date": "Mar 14, 2024",
+		"language": "JavaScript",
+		"runtime": "96.93",
+		"memory": "63.80",
+		"help": "No"
+	},
+	{
 		"number": "931",
 		"difficulty": "Medium",
 		"date": "Jan 20, 2024",
@@ -864,6 +1395,60 @@
 		"help": "No"
 	},
 	{
+		"number": "948",
+		"difficulty": "Medium",
+		"date": "Mar 3, 2024",
+		"language": "JavaScript",
+		"runtime": "100.00",
+		"memory": "71.43",
+		"help": "No"
+	},
+	{
+		"number": "950",
+		"difficulty": "Medium",
+		"date": "Apr 10, 2024",
+		"language": "JavaScript",
+		"runtime": "100.00",
+		"memory": "87.74",
+		"help": "No"
+	},
+	{
+		"number": "977",
+		"difficulty": "Easy",
+		"date": "Mar 1, 2024",
+		"language": "JavaScript",
+		"runtime": "89.06",
+		"memory": "57.91",
+		"help": "No"
+	},
+	{
+		"number": "988",
+		"difficulty": "Medium",
+		"date": "Apr 16, 2024",
+		"language": "JavaScript",
+		"runtime": "79.41",
+		"memory": "88.24",
+		"help": "No"
+	},
+	{
+		"number": "992",
+		"difficulty": "Hard",
+		"date": "Mar 29, 2024",
+		"language": "JavaScript",
+		"runtime": "6.00",
+		"memory": "8.00",
+		"help": "No"
+	},
+	{
+		"number": "997",
+		"difficulty": "Easy",
+		"date": "Feb 22, 2024",
+		"language": "C++",
+		"runtime": "87.72",
+		"memory": "49.34",
+		"help": "No"
+	},
+	{
 		"number": "1026",
 		"difficulty": "Medium",
 		"date": "Jan 11, 2024",
@@ -871,6 +1456,33 @@
 		"runtime": "94.40",
 		"memory": "36.19",
 		"help": "No"
+	},
+	{
+		"number": "1038",
+		"difficulty": "Medium",
+		"date": "Jun 24, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "42.71",
+		"help": "No"
+	},
+	{
+		"number": "1043",
+		"difficulty": "Medium",
+		"date": "Feb 3, 2024",
+		"language": "C++",
+		"runtime": "87.55",
+		"memory": "28.40",
+		"help": "Yes"
+	},
+	{
+		"number": "1074",
+		"difficulty": "Hard",
+		"date": "Jan 27, 2024",
+		"language": "C++",
+		"runtime": "96.81",
+		"memory": "74.45",
+		"help": "Yes"
 	},
 	{
 		"number": "1095",
@@ -882,6 +1494,33 @@
 		"help": "No"
 	},
 	{
+		"number": "1110",
+		"difficulty": "Medium",
+		"date": "Jul 16, 2024",
+		"language": "C++",
+		"runtime": "8.65",
+		"memory": "8.97",
+		"help": "No"
+	},
+	{
+		"number": "1137",
+		"difficulty": "Easy",
+		"date": "Apr 23, 2024",
+		"language": "JavaScript",
+		"runtime": "81.69",
+		"memory": "30.34",
+		"help": "No"
+	},
+	{
+		"number": "1143",
+		"difficulty": "Medium",
+		"date": "Jan 31, 2024",
+		"language": "C++",
+		"runtime": "73.84",
+		"memory": "44.42",
+		"help": "Yes"
+	},
+	{
 		"number": "1155",
 		"difficulty": "Medium",
 		"date": "Dec 27, 2023",
@@ -889,6 +1528,24 @@
 		"runtime": "14.00",
 		"memory": "72.67",
 		"help": "Yes"
+	},
+	{
+		"number": "1171",
+		"difficulty": "Medium",
+		"date": "Mar 11, 2024",
+		"language": "JavaScript",
+		"runtime": "10.87",
+		"memory": "65.22",
+		"help": "No"
+	},
+	{
+		"number": "1190",
+		"difficulty": "Medium",
+		"date": "Jul 10, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "84.88",
+		"help": "No"
 	},
 	{
 		"number": "1207",
@@ -906,6 +1563,15 @@
 		"language": "Java",
 		"runtime": "5.20",
 		"memory": "99.93",
+		"help": "No"
+	},
+	{
+		"number": "1219",
+		"difficulty": "Medium",
+		"date": "Jul 14, 2024",
+		"language": "C++",
+		"runtime": "97.28",
+		"memory": "38.59",
 		"help": "No"
 	},
 	{
@@ -927,6 +1593,24 @@
 		"help": "Yes"
 	},
 	{
+		"number": "1239",
+		"difficulty": "Medium",
+		"date": "Jan 23, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "78.50",
+		"help": "Yes"
+	},
+	{
+		"number": "1249",
+		"difficulty": "Medium",
+		"date": "Apr 6, 2024",
+		"language": "JavaScript",
+		"runtime": "93.15",
+		"memory": "79.74",
+		"help": "No"
+	},
+	{
 		"number": "1269",
 		"difficulty": "Hard",
 		"date": "Oct 15, 2023",
@@ -942,6 +1626,24 @@
 		"language": "Java",
 		"runtime": "83.60",
 		"memory": "94.31",
+		"help": "No"
+	},
+	{
+		"number": "1289",
+		"difficulty": "Hard",
+		"date": "Apr 26, 2024",
+		"language": "JavaScript",
+		"runtime": "30.77",
+		"memory": "46.15",
+		"help": "Yes"
+	},
+	{
+		"number": "1291",
+		"difficulty": "Medium",
+		"date": "Feb 22, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "84.55",
 		"help": "No"
 	},
 	{
@@ -999,6 +1701,15 @@
 		"help": "No"
 	},
 	{
+		"number": "1382",
+		"difficulty": "Medium",
+		"date": "Jun 26, 2024",
+		"language": "C++",
+		"runtime": "50.25",
+		"memory": "40.07",
+		"help": "No"
+	},
+	{
 		"number": "1420",
 		"difficulty": "Hard",
 		"date": "Oct 7, 2023",
@@ -1026,6 +1737,24 @@
 		"help": "Yes"
 	},
 	{
+		"number": "1438",
+		"difficulty": "Medium",
+		"date": "Jun 22, 2024",
+		"language": "C++",
+		"runtime": "94.26",
+		"memory": "69.11",
+		"help": "Yes"
+	},
+	{
+		"number": "1457",
+		"difficulty": "Medium",
+		"date": "Jan 23, 2024",
+		"language": "C++",
+		"runtime": "7.24",
+		"memory": "5.09",
+		"help": "No"
+	},
+	{
 		"number": "1458",
 		"difficulty": "Hard",
 		"date": "Oct 8, 2023",
@@ -1033,6 +1762,33 @@
 		"runtime": "97.93",
 		"memory": "97.24",
 		"help": "Yes"
+	},
+	{
+		"number": "1463",
+		"difficulty": "Hard",
+		"date": "Jul 26, 2024",
+		"language": "C++",
+		"runtime": "88.33",
+		"memory": "17.31",
+		"help": "Yes"
+	},
+	{
+		"number": "1481",
+		"difficulty": "Medium",
+		"date": "Feb 15, 2024",
+		"language": "C++",
+		"runtime": "81.69",
+		"memory": "74.39",
+		"help": "No"
+	},
+	{
+		"number": "1482",
+		"difficulty": "Medium",
+		"date": "Jun 18, 2024",
+		"language": "C++",
+		"runtime": "63.43",
+		"memory": "92.92",
+		"help": "No"
 	},
 	{
 		"number": "1496",
@@ -1053,6 +1809,24 @@
 		"help": "No"
 	},
 	{
+		"number": "1518",
+		"difficulty": "Easy",
+		"date": "Jul 6, 2024",
+		"language": "C++",
+		"runtime": "53.84",
+		"memory": "72.30",
+		"help": "No"
+	},
+	{
+		"number": "1530",
+		"difficulty": "Medium",
+		"date": "Jul 17, 2024",
+		"language": "C++",
+		"runtime": "88.25",
+		"memory": "74.44",
+		"help": "Yes"
+	},
+	{
 		"number": "1531",
 		"difficulty": "Hard",
 		"date": "Dec 28, 2023",
@@ -1060,6 +1834,24 @@
 		"runtime": "65.00",
 		"memory": "95.00",
 		"help": "Yes"
+	},
+	{
+		"number": "1544",
+		"difficulty": "Easy",
+		"date": "Apr 4, 2024",
+		"language": "JavaScript",
+		"runtime": "63.13",
+		"memory": "38.63",
+		"help": "No"
+	},
+	{
+		"number": "1550",
+		"difficulty": "Easy",
+		"date": "Jun 30, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "83.42",
+		"help": "No"
 	},
 	{
 		"number": "1578",
@@ -1077,6 +1869,33 @@
 		"language": "Java",
 		"runtime": "48.39",
 		"memory": "46.17",
+		"help": "No"
+	},
+	{
+		"number": "1598",
+		"difficulty": "Easy",
+		"date": "Jul 9, 2024",
+		"language": "C++",
+		"runtime": "67.13",
+		"memory": "84.88",
+		"help": "No"
+	},
+	{
+		"number": "1609",
+		"difficulty": "Medium",
+		"date": "Apr 27, 2024",
+		"language": "JavaScript",
+		"runtime": "58.98",
+		"memory": "63.67",
+		"help": "No"
+	},
+	{
+		"number": "1614",
+		"difficulty": "Easy",
+		"date": "Apr 4, 2024",
+		"language": "JavaScript",
+		"runtime": "73.04",
+		"memory": "62.32",
 		"help": "No"
 	},
 	{
@@ -1098,6 +1917,15 @@
 		"help": "No"
 	},
 	{
+		"number": "1636",
+		"difficulty": "Easy",
+		"date": "Jul 22, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "84.81",
+		"help": "No"
+	},
+	{
 		"number": "1637",
 		"difficulty": "Easy",
 		"date": "Dec 21, 2023",
@@ -1105,6 +1933,24 @@
 		"runtime": "84.62",
 		"memory": "92.31",
 		"help": "No"
+	},
+	{
+		"number": "1642",
+		"difficulty": "Medium",
+		"date": "Feb 16, 2024",
+		"language": "C++",
+		"runtime": "85.60",
+		"memory": "10.90",
+		"help": "No"
+	},
+	{
+		"number": "1653",
+		"difficulty": "Medium",
+		"date": "Jul 29, 2024",
+		"language": "C++",
+		"runtime": "61.72",
+		"memory": "73.37",
+		"help": "Yes"
 	},
 	{
 		"number": "1657",
@@ -1125,6 +1971,15 @@
 		"help": "No"
 	},
 	{
+		"number": "1669",
+		"difficulty": "Medium",
+		"date": "Mar 20, 2024",
+		"language": "JavaScript",
+		"runtime": "96.34",
+		"memory": "17.07",
+		"help": "No"
+	},
+	{
 		"number": "1672",
 		"difficulty": "Easy",
 		"date": "Aug 6, 2023",
@@ -1134,12 +1989,30 @@
 		"help": "No"
 	},
 	{
+		"number": "1700",
+		"difficulty": "Easy",
+		"date": "Apr 8, 2024",
+		"language": "JavaScript",
+		"runtime": "89.62",
+		"memory": "77.72",
+		"help": "No"
+	},
+	{
 		"number": "1704",
 		"difficulty": "Easy",
 		"date": "Jan 11, 2024",
 		"language": "JavaScript",
 		"runtime": "92.63",
 		"memory": "87.02",
+		"help": "No"
+	},
+	{
+		"number": "1750",
+		"difficulty": "Medium",
+		"date": "Mar 6, 2024",
+		"language": "JavaScript",
+		"runtime": "94.59",
+		"memory": "70.27",
 		"help": "No"
 	},
 	{
@@ -1161,12 +2034,39 @@
 		"help": "No"
 	},
 	{
+		"number": "1791",
+		"difficulty": "Easy",
+		"date": "Jun 26, 2024",
+		"language": "C++",
+		"runtime": "83.92",
+		"memory": "77.19",
+		"help": "No"
+	},
+	{
 		"number": "1793",
 		"difficulty": "Hard",
 		"date": "Oct 22, 2023",
 		"language": "Python3",
 		"runtime": "87.19",
 		"memory": "72.56",
+		"help": "Yes"
+	},
+	{
+		"number": "1823",
+		"difficulty": "Medium",
+		"date": "Jul 7, 2024",
+		"language": "C++",
+		"runtime": "8.32",
+		"memory": "62.20",
+		"help": "No"
+	},
+	{
+		"number": "1863",
+		"difficulty": "Easy",
+		"date": "May 23, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "51.13",
 		"help": "Yes"
 	},
 	{
@@ -1185,6 +2085,42 @@
 		"language": "JavaScript",
 		"runtime": "85.92",
 		"memory": "85.92",
+		"help": "No"
+	},
+	{
+		"number": "1915",
+		"difficulty": "Medium",
+		"date": "Jun 22, 2024",
+		"language": "C++",
+		"runtime": "67.93",
+		"memory": "55.10",
+		"help": "Yes"
+	},
+	{
+		"number": "1971",
+		"difficulty": "Easy",
+		"date": "Apr 20, 2024",
+		"language": "JavaScript",
+		"runtime": "93.12",
+		"memory": "93.12",
+		"help": "No"
+	},
+	{
+		"number": "1992",
+		"difficulty": "Medium",
+		"date": "Apr 20, 2024",
+		"language": "JavaScript",
+		"runtime": "88.89",
+		"memory": "75.56",
+		"help": "No"
+	},
+	{
+		"number": "2000",
+		"difficulty": "Easy",
+		"date": "Apr 30, 2024",
+		"language": "C++",
+		"runtime": "100.00",
+		"memory": "26.16",
 		"help": "No"
 	},
 	{
@@ -1215,6 +2151,42 @@
 		"help": "Yes"
 	},
 	{
+		"number": "2073",
+		"difficulty": "Easy",
+		"date": "Apr 8, 2024",
+		"language": "JavaScript",
+		"runtime": "100.00",
+		"memory": "60.66",
+		"help": "No"
+	},
+	{
+		"number": "2092",
+		"difficulty": "Hard",
+		"date": "Jul 29, 2024",
+		"language": "C++",
+		"runtime": "69.20",
+		"memory": "71.71",
+		"help": "Yes"
+	},
+	{
+		"number": "2096",
+		"difficulty": "Medium",
+		"date": "Jul 15, 2024",
+		"language": "C++",
+		"runtime": "55.35",
+		"memory": "49.69",
+		"help": "Yes"
+	},
+	{
+		"number": "2108",
+		"difficulty": "Easy",
+		"date": "Feb 13, 2024",
+		"language": "C++",
+		"runtime": "95.17",
+		"memory": "62.17",
+		"help": "No"
+	},
+	{
 		"number": "2125",
 		"difficulty": "Medium",
 		"date": "Jan 2, 2024",
@@ -1231,6 +2203,42 @@
 		"runtime": "97.00",
 		"memory": "76.64",
 		"help": "Yes"
+	},
+	{
+		"number": "2149",
+		"difficulty": "Medium",
+		"date": "Feb 14, 2024",
+		"language": "C++",
+		"runtime": "98.20",
+		"memory": "60.91",
+		"help": "No"
+	},
+	{
+		"number": "2191",
+		"difficulty": "Medium",
+		"date": "Jul 23, 2024",
+		"language": "C++",
+		"runtime": "89.61",
+		"memory": "90.04",
+		"help": "No"
+	},
+	{
+		"number": "2192",
+		"difficulty": "Medium",
+		"date": "Jun 29, 2024",
+		"language": "C++",
+		"runtime": "89.46",
+		"memory": "96.71",
+		"help": "Yes"
+	},
+	{
+		"number": "2196",
+		"difficulty": "Medium",
+		"date": "Jul 14, 2024",
+		"language": "C++",
+		"runtime": "32.53",
+		"memory": "54.15",
+		"help": "No"
 	},
 	{
 		"number": "2225",
@@ -1269,6 +2277,24 @@
 		"help": "No"
 	},
 	{
+		"number": "2370",
+		"difficulty": "Medium",
+		"date": "Apr 26, 2024",
+		"language": "JavaScript",
+		"runtime": "88.59",
+		"memory": "89.00",
+		"help": "Yes"
+	},
+	{
+		"number": "2373",
+		"difficulty": "Easy",
+		"date": "May 11, 2024",
+		"language": "C++",
+		"runtime": "66.10",
+		"memory": "53.31",
+		"help": "No"
+	},
+	{
 		"number": "2385",
 		"difficulty": "Medium",
 		"date": "Jan 10, 2024",
@@ -1276,6 +2302,15 @@
 		"runtime": "100.00",
 		"memory": "90.91",
 		"help": "Yes"
+	},
+	{
+		"number": "2402",
+		"difficulty": "Hard",
+		"date": "Feb 23, 2024",
+		"language": "C++",
+		"runtime": "37.80",
+		"memory": "91.16",
+		"help": "No"
 	},
 	{
 		"number": "2433",
@@ -1287,12 +2322,57 @@
 		"help": "No"
 	},
 	{
+		"number": "2441",
+		"difficulty": "Easy",
+		"date": "May 2, 2024",
+		"language": "C++",
+		"runtime": "44.04",
+		"memory": "7.36",
+		"help": "No"
+	},
+	{
+		"number": "2444",
+		"difficulty": "Hard",
+		"date": "Apr 28, 2024",
+		"language": "JavaScript",
+		"runtime": "56.66",
+		"memory": "58.35",
+		"help": "Yes"
+	},
+	{
 		"number": "2483",
 		"difficulty": "Medium",
 		"date": "Aug 29, 2023",
 		"language": "Java",
 		"runtime": "99.60",
 		"memory": "89.28",
+		"help": "No"
+	},
+	{
+		"number": "2485",
+		"difficulty": "Easy",
+		"date": "Mar 13, 2024",
+		"language": "JavaScript",
+		"runtime": "96.41",
+		"memory": "65.13",
+		"help": "No"
+	},
+	{
+		"number": "2487",
+		"difficulty": "Medium",
+		"date": "May 6, 2024",
+		"language": "C++",
+		"runtime": "5.05",
+		"memory": "5.47",
+		"help": "No"
+	},
+	{
+		"number": "2540",
+		"difficulty": "Easy",
+		"date": "Mar 8, 2024",
+		"language": "JavaScript",
+		"runtime": "92.09",
+		"memory": "88.78",
 		"help": "No"
 	},
 	{
@@ -1332,6 +2412,15 @@
 		"help": "Yes"
 	},
 	{
+		"number": "2709",
+		"difficulty": "Hard",
+		"date": "Feb 25, 2024",
+		"language": "JavaScript",
+		"runtime": "100.00",
+		"memory": "20.00",
+		"help": "Yes"
+	},
+	{
 		"number": "2742",
 		"difficulty": "Hard",
 		"date": "Oct 14, 2023",
@@ -1341,12 +2430,111 @@
 		"help": "Yes"
 	},
 	{
+		"number": "2812",
+		"difficulty": "Medium",
+		"date": "Jul 14, 2024",
+		"language": "C++",
+		"runtime": "80.00",
+		"memory": "61.85",
+		"help": "Yes"
+	},
+	{
+		"number": "2816",
+		"difficulty": "Medium",
+		"date": "Jul 3, 2024",
+		"language": "C++",
+		"runtime": "92.82",
+		"memory": "82.67",
+		"help": "No"
+	},
+	{
+		"number": "2864",
+		"difficulty": "Easy",
+		"date": "Mar 1, 2024",
+		"language": "JavaScript",
+		"runtime": "66.28",
+		"memory": "32.32",
+		"help": "No"
+	},
+	{
 		"number": "2870",
 		"difficulty": "Medium",
 		"date": "Jan 4, 2024",
 		"language": "JavaScript",
 		"runtime": "50.00",
 		"memory": "25.00",
+		"help": "No"
+	},
+	{
+		"number": "2958",
+		"difficulty": "Medium",
+		"date": "Mar 27, 2024",
+		"language": "JavaScript",
+		"runtime": "93.80",
+		"memory": "89.38",
+		"help": "No"
+	},
+	{
+		"number": "2962",
+		"difficulty": "Medium",
+		"date": "Mar 29, 2024",
+		"language": "JavaScript",
+		"runtime": "85.71",
+		"memory": "28.57",
+		"help": "No"
+	},
+	{
+		"number": "2966",
+		"difficulty": "Medium",
+		"date": "Jan 31, 2024",
+		"language": "C++",
+		"runtime": "97.32",
+		"memory": "38.96",
+		"help": "No"
+	},
+	{
+		"number": "2971",
+		"difficulty": "Medium",
+		"date": "Jul 13, 2024",
+		"language": "C++",
+		"runtime": "84.93",
+		"memory": "29.84",
+		"help": "No"
+	},
+	{
+		"number": "2976",
+		"difficulty": "Medium",
+		"date": "Jul 26, 2024",
+		"language": "C++",
+		"runtime": "9.14",
+		"memory": "5.11",
+		"help": "No"
+	},
+	{
+		"number": "2997",
+		"difficulty": "Medium",
+		"date": "Apr 29, 2024",
+		"language": "C++",
+		"runtime": "97.36",
+		"memory": "55.11",
+		"help": "No"
+	},
+	{
+		"number": "3005",
+		"difficulty": "Easy",
+		"date": "Mar 7, 2024",
+		"language": "JavaScript",
+		"runtime": "89.50",
+		"memory": "48.70",
+		"help": "No"
+	},
+	{
+		"number": "3075",
+		"difficulty": "Medium",
+		"date": "Jul 7, 2024",
+		"language": "C++",
+		"runtime": "81.49",
+		"memory": "61.31",
 		"help": "No"
 	}
 ]
